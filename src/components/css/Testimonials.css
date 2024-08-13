@@ -1,0 +1,64 @@
+:root {
+    --numberOfTestimonials : 11;
+    --widthOfTestimonials : 250px;
+}
+.Testimonials {
+    display: grid;
+    flex-direction: center;
+}
+
+.slider {
+    height: 250px;
+    margin : auto;
+    position : relative;
+    width : 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(calc(var(--widthOfTestimonials) *-1) * var(--numberOfTestimonials)));
+    }
+}
+
+.slide-track {
+    display : flex;
+    width: calc(250px * calc(var(--numberOfTestimonials) * 2)); /* Nombre de testimonials * width d'un slide */
+    animation : scroll 40s linear infinite;
+}
+
+.slide {
+    height: 200px;
+    width: var(--widthOfTestimonials);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border : solid;
+}
+
+.slider::before,
+.slider::after {
+    background : linear-gradient(to right, black 0%, rgba(0,0,0,0) 100%);
+    content : '';
+    height : 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: -1px;
+    top: 0;
+    transform: rotateZ(180deg);
+}

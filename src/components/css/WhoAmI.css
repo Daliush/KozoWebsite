@@ -1,0 +1,74 @@
+.WhoAmIText {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ImageText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* This ensures even spacing between items */
+    align-items: stretch;            /* This vertically centers the items */
+}
+
+.ImageTextItem {
+    flex : 1;
+    flex-grow: 1;
+    margin : 1em;
+    padding: 1em;
+}
+
+.imageWhoAmI {
+    object-fit:cover;
+    width: 70%;
+    height: 70%;
+    max-width: 100%;                /* Ensure the image doesn't exceed its container */
+    height: auto;                   /* Maintain aspect ratio */
+}
+
+.imageContainer {
+    display : flex;
+    flex-direction: row-reverse;
+}
+.ImageTextItem img {
+    border-radius: 0.2em;
+    border: solid 0.1em;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column; /* Arrange paragraphs in a column */
+}
+.textContainer p {
+    flex: 1; /* Make paragraphs take up equal vertical space */
+    width: 100%; /* Ensure paragraphs take the full width of the container */
+    display: flex;
+    align-items: center; /* Center text vertically within each paragraph */
+    margin: 0; /* Remove default margin from paragraphs */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+.textWhoAmI:nth-child(2) {
+    transition-delay: 400ms;
+}
+.textWhoAmI:nth-child(3) {
+    transition-delay: 800ms;
+}
+.textWhoAmI:nth-child(4) {
+    transition-delay: 1200ms;
+}
+@media (max-width: 768px) {
+    .ImageText {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .textContainer p {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+}
