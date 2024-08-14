@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/KozoWebsite/static/css/main.ebb236a7.css",
+    "main.js": "/KozoWebsite/static/js/main.c4cf9491.js",
+    "static/js/453.ed3810f9.chunk.js": "/KozoWebsite/static/js/453.ed3810f9.chunk.js",
+    "static/media/yasuo_background.jpg": "/KozoWebsite/static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
+    "static/media/Coco.ttf": "/KozoWebsite/static/media/Coco.6c7b06778093a82eb7fc.ttf",
+    "static/media/blowbrush.ttf": "/KozoWebsite/static/media/blowbrush.31b0d65ca7795d041afe.ttf",
+    "static/media/BADGRUNGE.ttf": "/KozoWebsite/static/media/BADGRUNGE.329fc4cd5590ef7d52bb.ttf",
+    "static/media/JumperBlackItalic.ttf": "/KozoWebsite/static/media/JumperBlackItalic.f6335a866ee4f16224bf.ttf",
+    "static/media/JumperBlack.ttf": "/KozoWebsite/static/media/JumperBlack.31a53fc98f66d56297e2.ttf",
+    "static/media/Milker.otf": "/KozoWebsite/static/media/Milker.51c62b0925a74f6409bc.otf",
+    "static/media/AkiraExpandedDemo.otf": "/KozoWebsite/static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
+    "static/media/PaybAck.ttf": "/KozoWebsite/static/media/PaybAck.4501cb5a72599d8fe32c.ttf",
+    "static/media/Moderniz.otf": "/KozoWebsite/static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
+    "static/media/aBlackLives.ttf": "/KozoWebsite/static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
+    "index.html": "/KozoWebsite/index.html",
+    "main.ebb236a7.css.map": "/KozoWebsite/static/css/main.ebb236a7.css.map",
+    "main.c4cf9491.js.map": "/KozoWebsite/static/js/main.c4cf9491.js.map",
+    "453.ed3810f9.chunk.js.map": "/KozoWebsite/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebb236a7.css",
+    "static/js/main.c4cf9491.js"
+  ]
+}
