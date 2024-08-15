@@ -23,8 +23,6 @@ function Home() {
       entries.forEach((entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("showRight")
-        } else {
-          entry.target.classList.remove("showRight")
         }
       }))
     })

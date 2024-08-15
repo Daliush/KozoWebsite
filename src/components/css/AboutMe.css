@@ -1,4 +1,9 @@
 .AboutMe {
+    background-image: url('/public/images/backgroundStars.png');
+    background-position-x: center;
+    background-repeat: repeat;
+    background-size: contain;
     background-color: black;
+    overflow: hidden;
     color : white;
 }
