@@ -1,5 +1,5 @@
 import './css/Testimonials.css';
-import '../App.css'
+import './css/Home.css';
 function Testimonials() {
     return (
         <div className="Testimonials">

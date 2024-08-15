@@ -1,5 +1,5 @@
 import './css/HowItWorks.css';
-import '../App.css'
+import './css/Home.css';
 function HowItWorks() {
     return (
         <div className="HowItWorks">

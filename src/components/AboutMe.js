@@ -1,5 +1,5 @@
 import './css/AboutMe.css';
-import '../App.css'
+import './css/Home.css';
 function AboutMe() {
     const story = `La plupart des coachs Challenger ont fait exactement comme vous, ils ont spammé les games et obtenu un résultat différent.
 

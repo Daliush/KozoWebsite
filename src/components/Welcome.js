@@ -1,5 +1,5 @@
 import './css/Welcome.css';
-import '../App.css'
+import './css/Home.css';
 function Welcome() {
     return (
         <div className="WelcomeText">

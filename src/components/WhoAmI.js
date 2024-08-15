@@ -1,5 +1,5 @@
 import './css/WhoAmI.css';
-import '../App.css'
+import './css/Home.css';
 import myImage from '../images/tengenSmiling.jpg';
 function WhoAmI() {
     return (
