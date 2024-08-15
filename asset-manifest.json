@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/KozoWebsite/static/css/main.d1a05581.css",
-    "main.js": "/KozoWebsite/static/js/main.cc8b3f91.js",
-    "static/js/453.ed3810f9.chunk.js": "/KozoWebsite/static/js/453.ed3810f9.chunk.js",
-    "static/media/yasuo_background.jpg": "/KozoWebsite/static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
-    "static/media/Coco.ttf": "/KozoWebsite/static/media/Coco.6c7b06778093a82eb7fc.ttf",
-    "static/media/blowbrush.ttf": "/KozoWebsite/static/media/blowbrush.31b0d65ca7795d041afe.ttf",
-    "static/media/BADGRUNGE.ttf": "/KozoWebsite/static/media/BADGRUNGE.329fc4cd5590ef7d52bb.ttf",
-    "static/media/JumperBlackItalic.ttf": "/KozoWebsite/static/media/JumperBlackItalic.f6335a866ee4f16224bf.ttf",
-    "static/media/JumperBlack.ttf": "/KozoWebsite/static/media/JumperBlack.31a53fc98f66d56297e2.ttf",
-    "static/media/tengenSmiling.jpg": "/KozoWebsite/static/media/tengenSmiling.22aea9796216bf8246c1.jpg",
-    "static/media/Milker.otf": "/KozoWebsite/static/media/Milker.51c62b0925a74f6409bc.otf",
-    "static/media/AkiraExpandedDemo.otf": "/KozoWebsite/static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
-    "static/media/PaybAck.ttf": "/KozoWebsite/static/media/PaybAck.4501cb5a72599d8fe32c.ttf",
-    "static/media/Moderniz.otf": "/KozoWebsite/static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
-    "static/media/aBlackLives.ttf": "/KozoWebsite/static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
-    "index.html": "/KozoWebsite/index.html",
-    "main.d1a05581.css.map": "/KozoWebsite/static/css/main.d1a05581.css.map",
-    "main.cc8b3f91.js.map": "/KozoWebsite/static/js/main.cc8b3f91.js.map",
-    "453.ed3810f9.chunk.js.map": "/KozoWebsite/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "./static/css/main.f8082797.css",
+    "main.js": "./static/js/main.be678ace.js",
+    "static/js/453.ed3810f9.chunk.js": "./static/js/453.ed3810f9.chunk.js",
+    "static/media/yasuo_background.jpg": "./static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
+    "static/media/Coco.ttf": "./static/media/Coco.6c7b06778093a82eb7fc.ttf",
+    "static/media/blowbrush.ttf": "./static/media/blowbrush.31b0d65ca7795d041afe.ttf",
+    "static/media/BADGRUNGE.ttf": "./static/media/BADGRUNGE.329fc4cd5590ef7d52bb.ttf",
+    "static/media/JumperBlackItalic.ttf": "./static/media/JumperBlackItalic.f6335a866ee4f16224bf.ttf",
+    "static/media/JumperBlack.ttf": "./static/media/JumperBlack.31a53fc98f66d56297e2.ttf",
+    "static/media/tengenSmiling.jpg": "./static/media/tengenSmiling.22aea9796216bf8246c1.jpg",
+    "static/media/Milker.otf": "./static/media/Milker.51c62b0925a74f6409bc.otf",
+    "static/media/AkiraExpandedDemo.otf": "./static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
+    "static/media/PaybAck.ttf": "./static/media/PaybAck.4501cb5a72599d8fe32c.ttf",
+    "static/media/Moderniz.otf": "./static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
+    "static/media/aBlackLives.ttf": "./static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
+    "index.html": "./index.html",
+    "main.f8082797.css.map": "./static/css/main.f8082797.css.map",
+    "main.be678ace.js.map": "./static/js/main.be678ace.js.map",
+    "453.ed3810f9.chunk.js.map": "./static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1a05581.css",
-    "static/js/main.cc8b3f91.js"
+    "static/css/main.f8082797.css",
+    "static/js/main.be678ace.js"
   ]
 }
