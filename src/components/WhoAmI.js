@@ -1,5 +1,6 @@
 import './css/WhoAmI.css';
 import '../App.css'
+import myImage from '../images/tengenSmiling.jpg';
 function WhoAmI() {
     return (
         <div className="WhoAmIText">
@@ -7,7 +8,7 @@ function WhoAmI() {
             <h2 className="hidden">Who Am I ?</h2>
             <div className='ImageText hidden'>
                 <div className='ImageTextItem imageContainer'>
-                    <img className='imageWhoAmI' src = 'images/TengenSmiling.jpg'></img>
+                    <img className='imageWhoAmI' src = {myImage}></img>
                 </div>
                 <div className='ImageTextItem textContainer'>
                     <p className="hiddenRight textWhoAmI">I'm Kozo.</p>
