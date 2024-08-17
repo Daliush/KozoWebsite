@@ -10,7 +10,7 @@ function Book() {
             <div className='cardContainer'>
             <div className="card">
                 <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="NFT" />
+                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                     <p className='h2Basic'>Single hours</p>
                     <p className='description'>
                         Open your eyes with a single hour coaching session.
@@ -35,7 +35,7 @@ function Book() {
             </div>
             <div className="card">
                 <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="NFT" />
+                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                     <p className='h2Basic'>1 month plan</p>
                     <p className='description'>
                         Get a daily follow up on your progress.
@@ -60,7 +60,7 @@ function Book() {
             </div>
             <div className="card">
                 <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="NFT" />
+                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                     <p className='h2Basic'>Live review</p>
                     <p className='description'>
                         Let coach Kozo teach your while you're playing
