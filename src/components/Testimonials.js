@@ -3,6 +3,10 @@ import './css/Home.css';
 import daliushTestimonials from '../images/testimonialDaliush.png'
 import zed from '../images/galaxy-slayer-zed-splash.jpg'
 import tengen from '../images/tengenSmiling.jpg'
+import elyfroThumbnail from '../images/Elyfro_thumbnail.png'
+import elyfro1 from '../images/Elyfro_1.png'
+import elyfro2 from '../images/Elyfro_2.png'
+import elyfro3 from '../images/Elyfro_3.png'
 import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
@@ -69,15 +73,15 @@ function Testimonials() {
                     <div className='mainTestimonial'>
                         <a>Daliush</a>
                         <hr />
-                        <img className='imageTestimonial' src={daliushTestimonials} alt="bookingPhoto" />
+                        <img className='imageTestimonial' src={daliushTestimonials} alt="daliushThumb" />
                     </div>
                 </div>
 
                 <div className="cardTestimonial" id='cardTestimonial1'>
                     <div className='mainTestimonial'>
-                        <a>Daliush</a>
+                        <a>Elyfro</a>
                         <hr />
-                        <img className='imageTestimonial' src={daliushTestimonials} alt="bookingPhoto" />
+                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
                     </div>
                 </div>
             </div>
@@ -103,9 +107,9 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images1'>
-                        <img src={tengen} class="carousel-image active" />
-                        <img src={tengen} class="carousel-image" />
-                        <img src={tengen} class="carousel-image" />
+                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
+                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
+                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
                     </div>
 
                 </div>

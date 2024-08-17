@@ -75,7 +75,7 @@
   }
   
   .modal::backdrop {
-    background-color: rgba(93,93,93,0.25);
+    background-color: rgba(93,93,93,0.35);
   }
 
   .modal {
@@ -103,6 +103,8 @@
 .carousel-image {
     object-fit: cover;
     display: none;
+    max-height: 80vh;
+    max-width: 80vw;
 }
 
 .carousel-image.active {
