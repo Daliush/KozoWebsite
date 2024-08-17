@@ -7,6 +7,13 @@
     flex-direction: center;
 }
 
+.cardContainer {
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .cardTestimonial{
     cursor: pointer;
     user-select:none;
@@ -76,61 +83,54 @@
     border: none;
     outline: none;
     padding: 0em;
+    width: 100vw;
+    height: 100vh;
   }
 
-/** Code pour slider automatique : */
-.slider {
-    height: 250px;
-    margin : auto;
-    position : relative;
-    width : 90%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(calc(var(--widthOfTestimonials) *-1) * var(--numberOfTestimonials)));
-    }
-}
-
-.slide-track {
-    display : flex;
-    width: calc(250px * calc(var(--numberOfTestimonials) * 2)); /* Nombre de testimonials * width d'un slide */
-    animation : scroll 40s linear infinite;
-}
-
-.slide {
-    height: 200px;
-    width: var(--widthOfTestimonials);
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border : solid;
-}
-
-.slider::before,
-.slider::after {
-    background : linear-gradient(to right, black 0%, rgba(0,0,0,0) 100%);
-    content : '';
-    height : 100%;
+  .carousel-container {
     position: absolute;
-    width: 15%;
-    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    text-align: center; /* Optional: Center text inside the child */
 }
 
-.slider::before {
-    left: 0;
-    top: 0;
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.slider::after {
-    right: -1px;
-    top: 0;
-    transform: rotateZ(180deg);
+.carousel-image {
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+/* Fixed position buttons inside the dialog */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000; /* Ensure the buttons are above everything */
+}
+
+.carousel-button.left {
+  left: 10px; /* Adjust positioning */
+}
+
+.carousel-button.right {
+  right: 10px; /* Adjust positioning */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
