@@ -166,3 +166,15 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .cardTestimonial {
+    max-width: 70vw;
+    min-width: 70vw;
+  }
+
+  .cardTestimonialContainer {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+}
