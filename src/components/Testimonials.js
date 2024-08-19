@@ -62,13 +62,29 @@ function Testimonials() {
         Array.from(document.getElementsByClassName('right')).forEach((right) => {
             right.addEventListener('click', nextImage)
         })
+
+        // Boutons pour slider des testimonials
+        const testimonialContainer = document.getElementById('cardTestimonialContainer');
+        const prevButton = document.getElementById('leftTestimonials')
+        const nextButton = document.getElementById('rightTestimonials')
+        const containerWidth = testimonialContainer.getBoundingClientRect().width;
+
+        nextButton.addEventListener('click', () => {
+            testimonialContainer.scrollLeft += containerWidth
+        })
+        prevButton.addEventListener('click', () => {
+            testimonialContainer.scrollLeft -= containerWidth
+        })
     }, []);
     return (
         <div className="Testimonials" id='Testimonials'>
             <h2 className="hidden">
                 Some of the feedbacks over the last 2 months
             </h2>
-            <div className='cardContainer'>
+            <div className='sliderContainer'>
+            <button class="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
+            
+            <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                 <div className="cardTestimonial" id='cardTestimonial0'>
                     <div className='mainTestimonial'>
                         <a>Daliush</a>
@@ -84,9 +100,26 @@ function Testimonials() {
                         <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
                     </div>
                 </div>
+
+                <div className="cardTestimonial" id='cardTestimonial2'>
+                    <div className='mainTestimonial'>
+                        <a>Elyfro</a>
+                        <hr />
+                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
+                    </div>
+                </div>
+
+                <div className="cardTestimonial" id='cardTestimonial3'>
+                    <div className='mainTestimonial'>
+                        <a>Elyfro</a>
+                        <hr />
+                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
+                    </div>
+                </div>
             </div>
-
-
+            <button class="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
+                
+            </div>
             <dialog className='modal' id='modal1'>
                 <button class="carousel-button left" id='left1'>&#10094;</button>
                 <button class="carousel-button right" id='right1'>&#10095;</button>
@@ -107,6 +140,34 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images1'>
+                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
+                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
+                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal3'>
+                <button class="carousel-button left" id='left3'>&#10094;</button>
+                <button class="carousel-button right" id='right3'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images2'>
+                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
+                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
+                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal4'>
+                <button class="carousel-button left" id='left4'>&#10094;</button>
+                <button class="carousel-button right" id='right4'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images3'>
                         <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
                         <img src={elyfro2} alt='elyfro2' class="carousel-image" />
                         <img src={elyfro3} alt='elyfro3' class="carousel-image" />
