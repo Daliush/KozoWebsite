@@ -16,6 +16,9 @@
   min-width: 35rem;
   overflow: hidden;
   scroll-behavior: smooth;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  touch-action: pan-x; /* Ensure touch scrolling */
 }
 
 .cardTestimonial{
@@ -23,7 +26,7 @@
     user-select:none;
     max-width: 30rem;
     min-width: 30rem;
-    margin: 5rem 2rem;
+    margin: 3rem 2rem;
     border: 1px solid #ffffff22;
     background-color: #282c34;
     background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
@@ -78,7 +81,17 @@
       }
     }
   }
-  
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cardTestimonialContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cardTestimonialContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
   .modal::backdrop {
     background-color: rgba(93,93,93,0.35);
   }
@@ -174,7 +187,7 @@
   }
 
   .cardTestimonialContainer {
-    max-width: 80vw;
-    min-width: 80vw;
+    max-width: calc(80vw + 1rem);
+    min-width: calc(80vw + 1rem);
   }
 }

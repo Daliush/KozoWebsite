@@ -7,9 +7,27 @@ import elyfroThumbnail from '../images/Elyfro_thumbnail.png'
 import elyfro1 from '../images/Elyfro_1.png'
 import elyfro2 from '../images/Elyfro_2.png'
 import elyfro3 from '../images/Elyfro_3.png'
+import fiansoThumbnail from '../images/Fianso_Thumbnail.png'
+import fianso1 from '../images/Fianso_1.png'
+import fianso2 from '../images/Fianso_2.png'
+import fianso3 from '../images/Fianso_3.png'
+import fianso4 from '../images/Fianso_4.png'
+import lightThumbnail from '../images/Light_Thumbnail.png'
+import light1 from '../images/Light_1.png'
+import kheopsThumbnail from '../images/Kheops_Thumbnail.png'
+import kheops1 from '../images/Kheops_1.png'
+import kheops2 from '../images/Kheops_2.png'
 import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
+
+        const scrollableDiv = document.getElementById('cardTestimonialContainer');
+
+        scrollableDiv.addEventListener('wheel', function(event) {
+            event.preventDefault(); // Prevent vertical scroll
+            scrollableDiv.scrollLeft += event.deltaY * 2; // Scroll horizontally
+        });
+
 
         const modals = document.getElementsByClassName('modal');
         const openModals = document.getElementsByClassName('cardTestimonial')
@@ -87,9 +105,9 @@ function Testimonials() {
             <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                 <div className="cardTestimonial" id='cardTestimonial0'>
                     <div className='mainTestimonial'>
-                        <a>Daliush</a>
+                        <a>Khéops</a>
                         <hr />
-                        <img className='imageTestimonial' src={daliushTestimonials} alt="daliushThumb" />
+                        <img className='imageTestimonial' src={kheopsThumbnail} alt="daliushThumb" />
                     </div>
                 </div>
 
@@ -103,17 +121,17 @@ function Testimonials() {
 
                 <div className="cardTestimonial" id='cardTestimonial2'>
                     <div className='mainTestimonial'>
-                        <a>Elyfro</a>
+                        <a>Fianso</a>
                         <hr />
-                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
+                        <img className='imageTestimonial' src={fiansoThumbnail} alt="ElyfroThumb" />
                     </div>
                 </div>
 
                 <div className="cardTestimonial" id='cardTestimonial3'>
                     <div className='mainTestimonial'>
-                        <a>Elyfro</a>
+                        <a>Light</a>
                         <hr />
-                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
+                        <img className='imageTestimonial' src={lightThumbnail} alt="ElyfroThumb" />
                     </div>
                 </div>
             </div>
@@ -126,9 +144,8 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images0'>
-                        <img src={daliushTestimonials} alt="daliush1" class="carousel-image active" />
-                        <img src={zed} alt="daliush2" class="carousel-image" />
-                        <img src={tengen} alt="daliush3" class="carousel-image" />
+                        <img src={kheops1} alt="kheops1" class="carousel-image active" />
+                        <img src={kheops2} alt="kheops2" class="carousel-image" />
                     </div>
 
                 </div>
@@ -154,9 +171,10 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images2'>
-                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
-                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
-                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                        <img src={fianso1} alt='fianso1' class="carousel-image active" />
+                        <img src={fianso2} alt='fianso2' class="carousel-image" />
+                        <img src={fianso3} alt='fianso3' class="carousel-image" />
+                        <img src={fianso4} alt='fianso4' class="carousel-image" />
                     </div>
 
                 </div>
@@ -168,9 +186,7 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images3'>
-                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
-                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
-                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                        <img src={light1} alt='light1' class="carousel-image active" />
                     </div>
 
                 </div>
