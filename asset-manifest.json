@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.040acd8b.css",
-    "main.js": "./static/js/main.0f773003.js",
+    "main.css": "./static/css/main.b030627e.css",
+    "main.js": "./static/js/main.4a6bcf59.js",
     "static/js/453.ed3810f9.chunk.js": "./static/js/453.ed3810f9.chunk.js",
     "static/media/backgroundStars.png": "./static/media/backgroundStars.7a5ea4683e44bb509161.png",
     "static/media/yasuo_background.jpg": "./static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
@@ -23,12 +23,12 @@
     "static/media/Moderniz.otf": "./static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
     "static/media/aBlackLives.ttf": "./static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
     "index.html": "./index.html",
-    "main.040acd8b.css.map": "./static/css/main.040acd8b.css.map",
-    "main.0f773003.js.map": "./static/js/main.0f773003.js.map",
+    "main.b030627e.css.map": "./static/css/main.b030627e.css.map",
+    "main.4a6bcf59.js.map": "./static/js/main.4a6bcf59.js.map",
     "453.ed3810f9.chunk.js.map": "./static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.040acd8b.css",
-    "static/js/main.0f773003.js"
+    "static/css/main.b030627e.css",
+    "static/js/main.4a6bcf59.js"
   ]
 }
