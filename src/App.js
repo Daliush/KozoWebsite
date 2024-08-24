@@ -12,9 +12,9 @@ function App() {
     <>
     <Menu/>
     <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="aboutMe" element={<AboutMe/>}/>
-    <Route path='Academy' element={<Academy/>}/>
+    <Route path="/KozoWebsite" element={<Home/>}/>
+    <Route path="/KozoWebsite/aboutMe" element={<AboutMe/>}/>
+    <Route path='/KozoWebsite/Academy' element={<Academy/>}/>
   </Routes>
   <Footer/>
   </>

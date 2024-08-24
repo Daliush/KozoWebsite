@@ -7,19 +7,19 @@ function Menu() {
     const navigate = useNavigate();
 
     const bookNowClick = () => {
-        navigate('/aboutMe#bookNow')
+        navigate('/KozoWebsite/aboutMe#bookNow')
     }
 
     const aboutMeClick = () => {
-        navigate('/aboutMe#StoryBody')
+        navigate('/KozoWebsite/aboutMe#StoryBody')
     }
 
     const logoClick = () => {
-        navigate('/#welcome')
+        navigate('/KozoWebsite/#welcome')
     }
 
     const academyClick = () => {
-        navigate('/academy')
+        navigate('/KozoWebsite/academy')
     }
     useEffect(() => {
         const menuIcon = document.querySelector('#menu-icon');
