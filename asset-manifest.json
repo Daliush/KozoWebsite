@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KozoWebsite/static/css/main.b57040c0.css",
-    "main.js": "/KozoWebsite/static/js/main.6a7f0e66.js",
+    "main.js": "/KozoWebsite/static/js/main.bdff8ca6.js",
     "static/js/453.ed3810f9.chunk.js": "/KozoWebsite/static/js/453.ed3810f9.chunk.js",
     "static/media/backgroundStars.png": "/KozoWebsite/static/media/backgroundStars.7a5ea4683e44bb509161.png",
     "static/media/yasuo_background.jpg": "/KozoWebsite/static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
@@ -35,11 +35,11 @@
     "static/media/aBlackLives.ttf": "/KozoWebsite/static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
     "index.html": "/KozoWebsite/index.html",
     "main.b57040c0.css.map": "/KozoWebsite/static/css/main.b57040c0.css.map",
-    "main.6a7f0e66.js.map": "/KozoWebsite/static/js/main.6a7f0e66.js.map",
+    "main.bdff8ca6.js.map": "/KozoWebsite/static/js/main.bdff8ca6.js.map",
     "453.ed3810f9.chunk.js.map": "/KozoWebsite/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b57040c0.css",
-    "static/js/main.6a7f0e66.js"
+    "static/js/main.bdff8ca6.js"
   ]
 }
