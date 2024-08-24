@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4f8a5218.css",
-    "main.js": "./static/js/main.b507aed5.js",
+    "main.css": "./static/css/main.788e61fa.css",
+    "main.js": "./static/js/main.33f89bc3.js",
     "static/js/453.ed3810f9.chunk.js": "./static/js/453.ed3810f9.chunk.js",
     "static/media/backgroundStars.png": "./static/media/backgroundStars.7a5ea4683e44bb509161.png",
     "static/media/yasuo_background.jpg": "./static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
@@ -9,14 +9,18 @@
     "static/media/Coco.ttf": "./static/media/Coco.6c7b06778093a82eb7fc.ttf",
     "static/media/Fianso_1.png": "./static/media/Fianso_1.78e35bf8b84aaed6db55.png",
     "static/media/Elyfro_2.png": "./static/media/Elyfro_2.bee283b59df4b8d9f92f.png",
+    "static/media/logo.png": "./static/media/logo.56a335f34dd6a0af4b5f.png",
     "static/media/Fianso_4.png": "./static/media/Fianso_4.619c18ec80ebbcbce950.png",
+    "static/media/Kheops_1.png": "./static/media/Kheops_1.d2fb44535e971fbabaa1.png",
     "static/media/Elyfro_1.png": "./static/media/Elyfro_1.aaf15e19ac9f914d989f.png",
+    "static/media/Kheops_2.png": "./static/media/Kheops_2.82d2416db0f9c3f875d6.png",
     "static/media/testimonialDaliush.png": "./static/media/testimonialDaliush.ab9720743fea58a5fc81.png",
     "static/media/Elyfro_3.png": "./static/media/Elyfro_3.58d423bd776f5b2f4efd.png",
     "static/media/Light_1.png": "./static/media/Light_1.33ca310c4176831eee25.png",
     "static/media/Light_Thumbnail.png": "./static/media/Light_Thumbnail.54ee5ce9c9efe9f77fbb.png",
     "static/media/blowbrush.ttf": "./static/media/blowbrush.31b0d65ca7795d041afe.ttf",
     "static/media/BADGRUNGE.ttf": "./static/media/BADGRUNGE.329fc4cd5590ef7d52bb.ttf",
+    "static/media/Kheops_Thumbnail.png": "./static/media/Kheops_Thumbnail.ddeb322007f801c7762b.png",
     "static/media/Fianso_2.png": "./static/media/Fianso_2.d8589d29c2628d620897.png",
     "static/media/galaxy-slayer-zed-splash.jpg": "./static/media/galaxy-slayer-zed-splash.12d6076cd19a7b59d395.jpg",
     "static/media/Elyfro_thumbnail.png": "./static/media/Elyfro_thumbnail.da64a14db5fa340dbbc2.png",
@@ -30,12 +34,12 @@
     "static/media/Moderniz.otf": "./static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
     "static/media/aBlackLives.ttf": "./static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
     "index.html": "./index.html",
-    "main.4f8a5218.css.map": "./static/css/main.4f8a5218.css.map",
-    "main.b507aed5.js.map": "./static/js/main.b507aed5.js.map",
+    "main.788e61fa.css.map": "./static/css/main.788e61fa.css.map",
+    "main.33f89bc3.js.map": "./static/js/main.33f89bc3.js.map",
     "453.ed3810f9.chunk.js.map": "./static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8a5218.css",
-    "static/js/main.b507aed5.js"
+    "static/css/main.788e61fa.css",
+    "static/js/main.33f89bc3.js"
   ]
 }
