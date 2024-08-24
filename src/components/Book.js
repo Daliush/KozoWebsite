@@ -3,7 +3,7 @@ import './css/Home.css';
 import myImage from '../images/galaxy-slayer-zed-splash.jpg';
 function Book() {
     return (
-        <div className="BookBody">
+        <div className="BookBody" id='bookNow'>
             <h2>
                 Chose your plan
             </h2>

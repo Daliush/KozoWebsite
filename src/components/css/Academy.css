@@ -1,0 +1,101 @@
+.TheAcademy {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AcademyItem {
+    width : 60%;
+    min-width : 40rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+.DoneWith {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* This ensures even spacing between items */
+    align-items: stretch;            /* This vertically centers the items */
+}
+
+.Then {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; /* This ensures even spacing between items */
+    align-items: stretch;            /* This vertically centers the items */
+}
+
+
+.KTLConstruction {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column; /* Arrange paragraphs in a column */
+    flex: 1 1 50%; /* Takes up 50% of the container */
+}
+
+.image {
+    flex: 1 1 50%; /* Takes up 50% of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text p {
+    flex: 1; /* Make paragraphs take up equal vertical space */
+    width: 100%; /* Ensure paragraphs take the full width of the container */
+    display: flex;
+    align-items: center; /* Center text vertically within each paragraph */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+.imageText {
+    object-fit:cover;
+    width: 80%;
+    max-width: 100%;                /* Ensure the image doesn't exceed its container */
+    height: auto;                   /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+
+    .AcademyItem {
+        width : 90%;
+        min-width : 0rem;
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+
+    .Then {
+        flex-direction: column;
+    }
+    
+    
+    .DoneWith {
+        flex-direction: column;
+    }
+
+    .text p {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .leftText p{
+        justify-content: start;
+        text-align:start;
+    }
+
+    .image {
+        flex: 1 1 30%; /* Takes up 50% of the container */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

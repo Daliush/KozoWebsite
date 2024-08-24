@@ -4,8 +4,12 @@ import React, { useEffect } from 'react';
 import WhoAmI from './WhoAmI';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
+import { useLocation } from 'react-router-dom';
 
 function Home() {
+
+  const location = useLocation();
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry => {
@@ -28,12 +32,25 @@ function Home() {
     })
     const hiddenElemsRight = document.querySelectorAll(".hiddenRight");
     hiddenElemsRight.forEach((el) => observer2.observe(el));
-  }, []);
+
+
+        // Scroll to the element with ID that matches the hash in the URL
+        if (location.hash) {
+          const element = document.getElementById(location.hash.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+    
+
+
+  }, [location]);
+
 
   return (
     <div className="App">
       <div className="App-body">
-        <section>
+        <section id='welcome'>
           <div><Welcome /></div>
         </section>
         <section>

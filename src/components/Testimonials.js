@@ -21,14 +21,6 @@ import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
 
-        const scrollableDiv = document.getElementById('cardTestimonialContainer');
-
-        scrollableDiv.addEventListener('wheel', function(event) {
-            event.preventDefault(); // Prevent vertical scroll
-            scrollableDiv.scrollLeft += event.deltaY * 2; // Scroll horizontally
-        });
-
-
         const modals = document.getElementsByClassName('modal');
         const openModals = document.getElementsByClassName('cardTestimonial')
         let images;
