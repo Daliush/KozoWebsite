@@ -37,9 +37,9 @@ function Menu() {
         <img onClick={logoClick} class="logo" src={logo}/>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a onClick={aboutMeClick} class="link link--mneme">About Me</a>
-            <a onClick={academyClick} class="link link--mneme">The Academy</a>
-            <a onClick={bookNowClick} class="link link--mneme">Book Now</a>
+            <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>
+            <a onClick={academyClick} class="lien link--mneme">The Academy</a>
+            <a onClick={bookNowClick} class="lien link--mneme">Book Now</a>
         </nav>
     </header>
         </div>
