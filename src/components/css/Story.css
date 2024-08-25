@@ -34,3 +34,23 @@
 .showStory {
     opacity: 1;
 }
+
+
+@media (max-width: 768px) {
+    .sectionStoryLeft {
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    .sectionStoryRight {
+        width: 100%;
+    }
+
+    .StoryBody {
+        margin-top: 100px;
+    }
+
+    .paragraphStory {
+        text-align: center;
+    }
+}
