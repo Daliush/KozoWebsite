@@ -1,20 +1,20 @@
 import './css/WhoAmI.css';
 import './css/Home.css';
-import tengenSmiling from '../images/tengenSmiling.jpg';
+import KozoIRL from '../images/KozoIRL.png';
 function WhoAmI() {
     return (
         <div className="WhoAmIText">
 
-            <h2 className="hidden">Who Am I ?</h2>
+            <h2 className="hidden">Why am i the coach you need ?</h2>
             <div className='ImageText hidden'>
                 <div className='ImageTextItem imageContainer'>
-                    <img className='imageWhoAmI' src = {tengenSmiling}></img>
+                    <img className='imageWhoAmI' src = {KozoIRL}></img>
                 </div>
                 <div className='ImageTextItem textContainer'>
-                    <p className="hiddenRight textWhoAmI">I'm Kozo.</p>
-                    <p className="hiddenRight textWhoAmI">&gt; An ex hardstuck low Dia for 5 years who quit college to go pro and reached High Grandmaster despite ADD.</p>
-                    <p className="hiddenRight textWhoAmI">&gt; I've spent over 3000 hours reviewing this game, about 1000 in coaching sessions.</p>
-                    <p className='hiddenRight textWhoAmI'>&gt; I'm the coach I wish I met 4 years ago, because I know my younger self would've made it in 6 months from D4 to High GM if I had been coaching him.</p>
+                    <p className="hiddenRight textWhoAmI">&gt; I quit college as 50% wr d4 hardstuck for 5 years, because I had a vision</p>
+                    <p className="hiddenRight textWhoAmI">&gt; I'm the coach I wish I met...</p>
+                    <p className="hiddenRight textWhoAmI">&gt; No wonder I had to find anything and everything I could find to improve to reach High GM</p>
+                    <p className='hiddenRight textWhoAmI'>&gt; Take things to the next level through the most effective process I could find to 10x your "genetic ceiling"</p>
                 </div>
             </div>
 

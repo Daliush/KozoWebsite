@@ -17,6 +17,8 @@ import light1 from '../images/Light_1.png'
 import kheopsThumbnail from '../images/Kheops_Thumbnail.png'
 import kheops1 from '../images/Kheops_1.png'
 import kheops2 from '../images/Kheops_2.png'
+import frenchFlag from '../images/frenchFlag.png'
+import ukFlag from '../images/ukFlag.png'
 import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
@@ -97,7 +99,10 @@ function Testimonials() {
             <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                 <div className="cardTestimonial" id='cardTestimonial0'>
                     <div className='mainTestimonial'>
+                        <div className='nameContainer'>
                         <a>Khéops</a>
+                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
+                        </div>
                         <hr />
                         <img className='imageTestimonial' src={kheopsThumbnail} alt="daliushThumb" />
                     </div>
@@ -105,7 +110,10 @@ function Testimonials() {
 
                 <div className="cardTestimonial" id='cardTestimonial1'>
                     <div className='mainTestimonial'>
+                    <div className='nameContainer'>
                         <a>Elyfro</a>
+                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
+                        </div>
                         <hr />
                         <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
                     </div>
@@ -113,7 +121,10 @@ function Testimonials() {
 
                 <div className="cardTestimonial" id='cardTestimonial2'>
                     <div className='mainTestimonial'>
+                    <div className='nameContainer'>
                         <a>Fianso</a>
+                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
+                        </div>
                         <hr />
                         <img className='imageTestimonial' src={fiansoThumbnail} alt="ElyfroThumb" />
                     </div>
@@ -121,7 +132,10 @@ function Testimonials() {
 
                 <div className="cardTestimonial" id='cardTestimonial3'>
                     <div className='mainTestimonial'>
-                        <a>Light</a>
+                    <div className='nameContainer'>
+                        <a>Khéops</a>
+                        <img src={ukFlag} alt="frenchFlag" className='flag'/>
+                        </div>
                         <hr />
                         <img className='imageTestimonial' src={lightThumbnail} alt="ElyfroThumb" />
                     </div>

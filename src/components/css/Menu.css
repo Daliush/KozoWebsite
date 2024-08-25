@@ -17,6 +17,7 @@
   backdrop-filter: blur(3px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   z-index: 100;
+  transition : all 0.5s;
 }
 .header::before {
   content: "";
@@ -38,8 +39,8 @@
 }
 .logo {
   margin: -100px 0px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   cursor : pointer;
 }
 .navbar a {

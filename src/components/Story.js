@@ -20,7 +20,7 @@ function Story() {
 
             </div>
             <div className='sectionStoryLeft'>
-                <h2 className='hiddenStory'>The Methodology: How I Broke Through My Limits</h2>
+                <h2 className='hiddenStory'>The Methodology</h2>
                 <p className='paragraphStory hiddenStory'>
                 Consciously knowing how to create repeatable results for the vast majority of players. It’s difficult to teach someone what you haven’t done yourself
                 </p>
@@ -35,7 +35,7 @@ function Story() {
                 </p>
             </div>
             <div className='sectionStoryLeft'>
-                <h2 className='hiddenStory'>The Academy: A Community that seeks Performance</h2>
+                <h2 className='hiddenStory'>The Academy</h2>
                 <p className='paragraphStory hiddenStory'>
                 I created an academy to achieve insane results for most players, all within a healthy atmosphere where everyone wants to improve.
                 </p>
@@ -44,13 +44,13 @@ function Story() {
                 </p>
             </div>
             <div className='sectionStoryRight'>
-                <h2 className='hiddenStory'>Training Future Coaches: A Long-Term Vision</h2>
+                <h2 className='hiddenStory'>Training Future Coaches</h2>
                 <p className='paragraphStory hiddenStory'>
                 I’m training players who will become my future coaches, so they can carry on my philosophy in the academy when I’m more focused on the pro level.
                 </p>
             </div>
             <div className='sectionStoryLeft' >
-                <h2 className='hiddenStory'>Join the Academy</h2>
+                <h2 className='hiddenStory'>Join us</h2>
                 <p className='paragraphStory hiddenStory'>
                 My methodology works very effectively for all my dedicated students, of all roles and all ranks, so why not you? If you’re ready to question what you think you know and have the hunger to improve, my academy is for you 🙂
                 </p>
