@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/KozoWebsite/static/css/main.f2453430.css",
-    "main.js": "/KozoWebsite/static/js/main.9b74489a.js",
+    "main.css": "/KozoWebsite/static/css/main.2655057c.css",
+    "main.js": "/KozoWebsite/static/js/main.ccfa3c7e.js",
     "static/js/453.ed3810f9.chunk.js": "/KozoWebsite/static/js/453.ed3810f9.chunk.js",
     "static/media/backgroundStars.png": "/KozoWebsite/static/media/backgroundStars.7a5ea4683e44bb509161.png",
     "static/media/yasuo_background.jpg": "/KozoWebsite/static/media/yasuo_background.5a3f54d83853542df2ba.jpg",
     "static/media/Fianso_Thumbnail.png": "/KozoWebsite/static/media/Fianso_Thumbnail.969cf99e246b2ce2f02f.png",
+    "static/media/KozoIRL.png": "/KozoWebsite/static/media/KozoIRL.85ec7111b51e246b603b.png",
     "static/media/Coco.ttf": "/KozoWebsite/static/media/Coco.6c7b06778093a82eb7fc.ttf",
     "static/media/Fianso_1.png": "/KozoWebsite/static/media/Fianso_1.78e35bf8b84aaed6db55.png",
     "static/media/Elyfro_2.png": "/KozoWebsite/static/media/Elyfro_2.bee283b59df4b8d9f92f.png",
@@ -30,16 +31,17 @@
     "static/media/Milker.otf": "/KozoWebsite/static/media/Milker.51c62b0925a74f6409bc.otf",
     "static/media/AkiraExpandedDemo.otf": "/KozoWebsite/static/media/AkiraExpandedDemo.5198553380d9bb727554.otf",
     "static/media/Fianso_3.png": "/KozoWebsite/static/media/Fianso_3.10a4df7bdfb84812781a.png",
+    "static/media/ukFlag.png": "/KozoWebsite/static/media/ukFlag.841fc3c5dd8b20c06f42.png",
     "static/media/PaybAck.ttf": "/KozoWebsite/static/media/PaybAck.4501cb5a72599d8fe32c.ttf",
     "static/media/Moderniz.otf": "/KozoWebsite/static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
     "static/media/aBlackLives.ttf": "/KozoWebsite/static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
     "index.html": "/KozoWebsite/index.html",
-    "main.f2453430.css.map": "/KozoWebsite/static/css/main.f2453430.css.map",
-    "main.9b74489a.js.map": "/KozoWebsite/static/js/main.9b74489a.js.map",
+    "main.2655057c.css.map": "/KozoWebsite/static/css/main.2655057c.css.map",
+    "main.ccfa3c7e.js.map": "/KozoWebsite/static/js/main.ccfa3c7e.js.map",
     "453.ed3810f9.chunk.js.map": "/KozoWebsite/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2453430.css",
-    "static/js/main.9b74489a.js"
+    "static/css/main.2655057c.css",
+    "static/js/main.ccfa3c7e.js"
   ]
 }
