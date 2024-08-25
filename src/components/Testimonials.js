@@ -17,6 +17,11 @@ import light1 from '../images/Light_1.png'
 import kheopsThumbnail from '../images/Kheops_Thumbnail.png'
 import kheops1 from '../images/Kheops_1.png'
 import kheops2 from '../images/Kheops_2.png'
+import Driak21Thumbnail from '../images/Driak21_thumbnail.png'
+import Driak211 from '../images/Driak21_1.png'
+import Driak212 from '../images/Driak21_2.png'
+import Driak213 from '../images/Driak21_3.png'
+import Driak214 from '../images/Driak21_4.png'
 import frenchFlag from '../images/frenchFlag.png'
 import ukFlag from '../images/ukFlag.png'
 import { useEffect } from 'react';
@@ -31,7 +36,7 @@ function Testimonials() {
         Array.from(openModals).forEach((openModal, index) => {
             openModal.addEventListener('click', () => {
                 currentIndex = 0;
-                const carouselDiv = document.getElementById("carousel-images"+index);
+                const carouselDiv = document.getElementById("carousel-images" + index);
                 images = carouselDiv.querySelectorAll("img");
                 modals[index].showModal();
             })
@@ -94,78 +99,99 @@ function Testimonials() {
                 Some of the feedbacks over the last 2 months
             </h2>
             <div className='sliderContainer'>
-            <button class="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
+                <button class="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
+
+                <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
+                    <div className="cardTestimonial" id='cardTestimonial0'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Driak21</a>
+                                <img src={ukFlag} alt="ukFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={Driak21Thumbnail} alt="daliushThumb" />
+                        </div>
+                    </div>
+                </div>
+                <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
+                    <div className="cardTestimonial" id='cardTestimonial1'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Khéops</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={kheopsThumbnail} alt="daliushThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial2'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Elyfro</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial3'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Fianso</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={fiansoThumbnail} alt="ElyfroThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial4'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Khéops</a>
+                                <img src={ukFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={lightThumbnail} alt="ElyfroThumb" />
+                        </div>
+                    </div>
+                </div>
+                <button class="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
+
+            </div>
+
+
+
+
+
+
+
+
             
-            <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
-                <div className="cardTestimonial" id='cardTestimonial0'>
-                    <div className='mainTestimonial'>
-                        <div className='nameContainer'>
-                        <a>Khéops</a>
-                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
-                        </div>
-                        <hr />
-                        <img className='imageTestimonial' src={kheopsThumbnail} alt="daliushThumb" />
-                    </div>
-                </div>
-
-                <div className="cardTestimonial" id='cardTestimonial1'>
-                    <div className='mainTestimonial'>
-                    <div className='nameContainer'>
-                        <a>Elyfro</a>
-                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
-                        </div>
-                        <hr />
-                        <img className='imageTestimonial' src={elyfroThumbnail} alt="ElyfroThumb" />
-                    </div>
-                </div>
-
-                <div className="cardTestimonial" id='cardTestimonial2'>
-                    <div className='mainTestimonial'>
-                    <div className='nameContainer'>
-                        <a>Fianso</a>
-                        <img src={frenchFlag} alt="frenchFlag" className='flag'/>
-                        </div>
-                        <hr />
-                        <img className='imageTestimonial' src={fiansoThumbnail} alt="ElyfroThumb" />
-                    </div>
-                </div>
-
-                <div className="cardTestimonial" id='cardTestimonial3'>
-                    <div className='mainTestimonial'>
-                    <div className='nameContainer'>
-                        <a>Khéops</a>
-                        <img src={ukFlag} alt="frenchFlag" className='flag'/>
-                        </div>
-                        <hr />
-                        <img className='imageTestimonial' src={lightThumbnail} alt="ElyfroThumb" />
-                    </div>
-                </div>
-            </div>
-            <button class="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
-                
-            </div>
             <dialog className='modal' id='modal1'>
-                <button class="carousel-button left" id='left1'>&#10094;</button>
-                <button class="carousel-button right" id='right1'>&#10095;</button>
+                <button class="carousel-button left" id='left0'>&#10094;</button>
+                <button class="carousel-button right" id='right0'>&#10095;</button>
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images0'>
-                        <img src={kheops1} alt="kheops1" class="carousel-image active" />
-                        <img src={kheops2} alt="kheops2" class="carousel-image" />
+                        <img src={Driak211} alt="Driak211" class="carousel-image active" />
+                        <img src={Driak212} alt="Driak212" class="carousel-image" />
+                        <img src={Driak213} alt="Driak213" class="carousel-image" />
+                        <img src={Driak214} alt="Driak214" class="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
-
             <dialog className='modal' id='modal2'>
                 <button class="carousel-button left" id='left2'>&#10094;</button>
                 <button class="carousel-button right" id='right2'>&#10095;</button>
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images1'>
-                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
-                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
-                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                        <img src={kheops1} alt="kheops1" class="carousel-image active" />
+                        <img src={kheops2} alt="kheops2" class="carousel-image" />
                     </div>
 
                 </div>
@@ -177,10 +203,9 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images2'>
-                        <img src={fianso1} alt='fianso1' class="carousel-image active" />
-                        <img src={fianso2} alt='fianso2' class="carousel-image" />
-                        <img src={fianso3} alt='fianso3' class="carousel-image" />
-                        <img src={fianso4} alt='fianso4' class="carousel-image" />
+                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
+                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
+                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
                     </div>
 
                 </div>
@@ -192,6 +217,21 @@ function Testimonials() {
                 <div class="carousel-container">
 
                     <div class="carousel-images" id='carousel-images3'>
+                        <img src={fianso1} alt='fianso1' class="carousel-image active" />
+                        <img src={fianso2} alt='fianso2' class="carousel-image" />
+                        <img src={fianso3} alt='fianso3' class="carousel-image" />
+                        <img src={fianso4} alt='fianso4' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal5'>
+                <button class="carousel-button left" id='left5'>&#10094;</button>
+                <button class="carousel-button right" id='right5'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images4'>
                         <img src={light1} alt='light1' class="carousel-image active" />
                     </div>
 
