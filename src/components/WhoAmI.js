@@ -12,7 +12,7 @@ function WhoAmI() {
                 </div>
                 <div className='ImageTextItem textContainer'>
                     <p className="hiddenRight textWhoAmI">&gt; I quit college as 50% wr d4 hardstuck for 5 years, because I had a vision</p>
-                    <p className="hiddenRight textWhoAmI">&gt; I'm the coach I wish I met...</p>
+                    <p className="hiddenRight textWhoAmI">&gt; I'm the coach I wish I met 4 years ago, because I know my younger self would've made it in 6 months from D4 to High GM if I had been coaching him.</p>
                     <p className="hiddenRight textWhoAmI">&gt; No wonder I had to find anything and everything I could find to improve to reach High GM</p>
                     <p className='hiddenRight textWhoAmI'>&gt; Take things to the next level through the most effective process I could find to 10x your "genetic ceiling"</p>
                 </div>

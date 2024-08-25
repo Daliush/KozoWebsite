@@ -23,6 +23,21 @@ import Driak212 from '../images/Driak21_2.png'
 import Driak213 from '../images/Driak21_3.png'
 import Driak214 from '../images/Driak21_4.png'
 import frenchFlag from '../images/frenchFlag.png'
+import ElToredoThumbnail from '../images/ElToredo_Thumbnail.png'
+import ElToredo1 from '../images/ElToredo_1.png'
+import ElToredo2 from '../images/ElToredo_2.png'
+import NexoThumbnail from '../images/Nexo_thumbnail.png'
+import Nexo1 from '../images/Nexo_1.png'
+import Nexo2 from '../images/Nexo_2.png'
+import Nexo3 from '../images/Nexo_3.png'
+import PsykoThumbnail from '../images/Psyko_thumbnail.png'
+import Psyko1 from '../images/Psyko_1.png'
+import Psyko2 from '../images/Psyko_2.png'
+import YoshiThumbnail from '../images/Yoshi_thumbnail.png'
+import Yoshi1 from '../images/Yoshi_1.png'
+import Yoshi2 from '../images/Yoshi_2.png'
+import Yoshi3 from '../images/Yoshi_3.png'
+import Yoshi4 from '../images/Yoshi_4.png'
 import ukFlag from '../images/ukFlag.png'
 import { useEffect } from 'react';
 function Testimonials() {
@@ -102,18 +117,19 @@ function Testimonials() {
                 <button class="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
 
                 <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
-                    <div className="cardTestimonial" id='cardTestimonial0'>
-                        <div className='mainTestimonial'>
-                            <div className='nameContainer'>
-                                <a>Driak21</a>
-                                <img src={ukFlag} alt="ukFlag" className='flag' />
+                    <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
+                        <div className="cardTestimonial" id='cardTestimonial0'>
+                            <div className='mainTestimonial'>
+                                <div className='nameContainer'>
+                                    <a>Driak21</a>
+                                    <img src={ukFlag} alt="ukFlag" className='flag' />
+                                </div>
+                                <hr />
+                                <img className='imageTestimonial' src={Driak21Thumbnail} alt="driakThumb" />
                             </div>
-                            <hr />
-                            <img className='imageTestimonial' src={Driak21Thumbnail} alt="daliushThumb" />
                         </div>
                     </div>
-                </div>
-                <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
+
                     <div className="cardTestimonial" id='cardTestimonial1'>
                         <div className='mainTestimonial'>
                             <div className='nameContainer'>
@@ -121,7 +137,7 @@ function Testimonials() {
                                 <img src={frenchFlag} alt="frenchFlag" className='flag' />
                             </div>
                             <hr />
-                            <img className='imageTestimonial' src={kheopsThumbnail} alt="daliushThumb" />
+                            <img className='imageTestimonial' src={kheopsThumbnail} alt="kheopsThumb" />
                         </div>
                     </div>
 
@@ -143,18 +159,62 @@ function Testimonials() {
                                 <img src={frenchFlag} alt="frenchFlag" className='flag' />
                             </div>
                             <hr />
-                            <img className='imageTestimonial' src={fiansoThumbnail} alt="ElyfroThumb" />
+                            <img className='imageTestimonial' src={fiansoThumbnail} alt="FiansoThumb" />
                         </div>
                     </div>
 
                     <div className="cardTestimonial" id='cardTestimonial4'>
                         <div className='mainTestimonial'>
                             <div className='nameContainer'>
-                                <a>Khéops</a>
+                                <a>Light</a>
                                 <img src={ukFlag} alt="frenchFlag" className='flag' />
                             </div>
                             <hr />
-                            <img className='imageTestimonial' src={lightThumbnail} alt="ElyfroThumb" />
+                            <img className='imageTestimonial' src={lightThumbnail} alt="LightThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial5'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>ElToredo</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={ElToredoThumbnail} alt="EltoredoThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial6'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>NeXo</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={NexoThumbnail} alt="NexoThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial7'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Yoshi</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={YoshiThumbnail} alt="YoshiThumbnail" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial8'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Psykokwak</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={PsykoThumbnail} alt="PsykoThumbnail" />
                         </div>
                     </div>
                 </div>
@@ -169,7 +229,7 @@ function Testimonials() {
 
 
 
-            
+
             <dialog className='modal' id='modal1'>
                 <button class="carousel-button left" id='left0'>&#10094;</button>
                 <button class="carousel-button right" id='right0'>&#10095;</button>
@@ -233,6 +293,63 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images4'>
                         <img src={light1} alt='light1' class="carousel-image active" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal6'>
+                <button class="carousel-button left" id='left6'>&#10094;</button>
+                <button class="carousel-button right" id='right6'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images5'>
+                        <img src={ElToredo1} alt='eltoredo1' class="carousel-image active" />
+                        <img src={ElToredo2} alt='eltoredo2' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+
+            <dialog className='modal' id='modal7'>
+                <button class="carousel-button left" id='left7'>&#10094;</button>
+                <button class="carousel-button right" id='right7'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images6'>
+                        <img src={Nexo1} alt='nexo1' class="carousel-image active" />
+                        <img src={Nexo2} alt='nexo2' class="carousel-image" />
+                        <img src={Nexo3} alt='nexo3' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal8'>
+                <button class="carousel-button left" id='left8'>&#10094;</button>
+                <button class="carousel-button right" id='right8'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images7'>
+                        <img src={Yoshi1} alt='Yoshi1' class="carousel-image active" />
+                        <img src={Yoshi2} alt='Yoshi2' class="carousel-image" />
+                        <img src={Yoshi3} alt='Yoshi3' class="carousel-image" />
+                        <img src={Yoshi4} alt='Yoshi4' class="carousel-image" />
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal9'>
+                <button class="carousel-button left" id='left9'>&#10094;</button>
+                <button class="carousel-button right" id='right9'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images8'>
+                        <img src={Psyko1} alt='Psyko1' class="carousel-image active" />
+                        <img src={Psyko2} alt='Psyko2' class="carousel-image" />
+
                     </div>
 
                 </div>
