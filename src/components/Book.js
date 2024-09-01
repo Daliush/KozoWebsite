@@ -8,81 +8,87 @@ function Book() {
                 Chose your plan
             </h2>
             <div className='cardContainer'>
-            <div className="card">
-                <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                    <p className='h2Basic'>Single hours</p>
-                    <p className='description'>
-                        Open your eyes with a single hour coaching session.
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>Single hours</p>
+                        <p className='description'>
+                            Open your eyes with a single hour coaching session.
                         </p>
-                    <div className='bookingInfo'>
-                        <div className="price">
-                            <ins>€</ins>
-                            <p>20 EUR</p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>20 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>1 Hour</p>
+                            </div>
                         </div>
-                        <div className="duration">
-                            <ins>◷</ins>
-                            <p>1 Hour</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className='link'>
-                        <div className='bookButton'>
-                            Book your plan
+                        <hr />
+                        <div className='link'>
+                            <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
+                                <div className='bookButton'>
+                                    Book your plan
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="card">
-                <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                    <p className='h2Basic'>1 month plan</p>
-                    <p className='description'>
-                        Get a daily follow up on your progress.
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>1 month plan</p>
+                        <p className='description'>
+                            Get a daily follow up on your progress.
                         </p>
-                    <div className='bookingInfo'>
-                        <div className="price">
-                            <ins>€</ins>
-                            <p>99 to 754 EUR</p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>99 to 754 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>1 Month</p>
+                            </div>
                         </div>
-                        <div className="duration">
-                            <ins>◷</ins>
-                            <p>1 Month</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className='link'>
-                        <div className='bookButton'>
-                            Book your plan
+                        <hr />
+                        <div className='link'>
+                        <a href="https://discord.gg/cdvtufDfQR" target='_blank'>
+                                <div className='bookButton'>
+                                    Book your plan
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="card">
-                <div className='main'>
-                    <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                    <p className='h2Basic'>Live review</p>
-                    <p className='description'>
-                        Let coach Kozo teach your while you're playing
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>Live review</p>
+                        <p className='description'>
+                            Let coach Kozo teach your while you're playing
                         </p>
-                    <div className='bookingInfo'>
-                        <div className="price">
-                            <ins>€</ins>
-                            <p>18 EUR</p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>18 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>1 Game</p>
+                            </div>
                         </div>
-                        <div className="duration">
-                            <ins>◷</ins>
-                            <p>1 Game</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className='link'>
-                        <div className='bookButton'>
-                            Book your plan
+                        <hr />
+                        <div className='link'>
+                        <a href="https://discord.gg/vRVY932SgB" target='_blank'>
+                                <div className='bookButton'>
+                                    Book your plan
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
 
         </div>

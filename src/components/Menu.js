@@ -1,10 +1,11 @@
 import './css/Menu.css';
 import './css/Home.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import logo from '../images/logo.png';
 function Menu() {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const bookNowClick = () => {
         navigate('/KozoWebsite/aboutMe#bookNow')
@@ -37,7 +38,16 @@ function Menu() {
     return (
         <div className='Menu'>
             <header class="header" id='navbar'>
-                <img onClick={logoClick} class="logo" src={logo} />
+                <div className='logoHome' onClick={logoClick}>
+                    <img class="logo" src={logo} />
+                    {
+                        (
+                            location.pathname.includes("aboutMe") ||
+                            location.pathname.includes("academy")
+                        )
+                        && <a className='homeA'>Home</a>
+                    }
+                </div>
                 <i class='bx bx-menu' id="menu-icon"></i>
                 <nav class="navbar">
                     <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>

@@ -17,14 +17,12 @@ hr.solidSeparator {
   margin-top: 3rem;
 }
 .bookNowButton {
-  background: #272c34;
-  background-image: -webkit-linear-gradient(top, #272c34, #48077d);
-  background-image: -moz-linear-gradient(top, #272c34, #48077d);
-  background-image: -ms-linear-gradient(top, #272c34, #48077d);
-  background-image: -o-linear-gradient(top, #272c34, #48077d);
-  background-image: linear-gradient(to bottom, #272c34, #48077d);
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
+  background-image: url('/public/images/PurpleNebula.png');
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
   border-radius: 9px;
   font-family: Arial;
   color: #ffffff;
@@ -35,12 +33,6 @@ hr.solidSeparator {
 }
 
 .bookNowButton:hover {
-  background: #282e36;
-  background-image: -webkit-linear-gradient(top, #282e36, #630fa8);
-  background-image: -moz-linear-gradient(top, #282e36, #630fa8);
-  background-image: -ms-linear-gradient(top, #282e36, #630fa8);
-  background-image: -o-linear-gradient(top, #282e36, #630fa8);
-  background-image: linear-gradient(to bottom, #282e36, #630fa8);
   text-decoration: none;
 }
 .socials-container{

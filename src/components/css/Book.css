@@ -83,7 +83,9 @@ body {
         justify-content: center;
         margin-top: .2rem;
         margin-bottom: -.3rem;
-
+        a {
+          text-decoration: none;
+        }
         .bookButton {
           -webkit-border-radius: 7;
           -moz-border-radius: 7;
