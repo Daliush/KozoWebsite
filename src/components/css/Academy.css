@@ -73,6 +73,9 @@
     height: 250px;
 }
 
+.DiscordBanner {
+    border-radius: 7px;
+}
 @media (max-width: 768px) {
 
     .AcademyItem {

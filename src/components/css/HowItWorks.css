@@ -8,14 +8,23 @@
     flex-grow: 1;
     margin : 1em;
     padding: 1em;
-    border :  0.2rem solid rgba(128, 128, 128, 0.411);
+    border :  0.1rem solid rgba(36, 2, 2, 0.411);
     border-radius: 0.5em;
+    background-color: #090111;
+    background-image: url('/public/images/redNebula_3.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(270deg) saturate(1.2) brightness(1.1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .StepTitle {
     text-align: center;
     font-family: 'Moderniz';
     font-size: 0.7em;
 }
+
+
 
 .StepsItem p {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -45,7 +45,7 @@ function Menu() {
                             location.pathname.includes("aboutMe") ||
                             location.pathname.includes("academy")
                         )
-                        && <a className='homeA'>Home</a>
+                        && <a className='homeA'><u>Home</u></a>
                     }
                 </div>
                 <i class='bx bx-menu' id="menu-icon"></i>

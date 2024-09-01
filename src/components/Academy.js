@@ -50,7 +50,10 @@ function Academy() {
             </div>
             <div className='AcademyItem KTLConstruction'>
                 <div className='text'>
-                    <p>Join our discord to stay informed</p>
+                    <p>Join our discord to stay updated</p>
+                    <a href='https://discord.gg/b3mEDGygQx' target='_blank'>
+                    <img className="DiscordBanner" src="https://discordapp.com/api/guilds/1235496317955084308/widget.png?style=banner3" alt="" />
+                    </a>
                 </div>
             </div>
         </div>
