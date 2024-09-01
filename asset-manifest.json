@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/KozoWebsite/static/css/main.4609043b.css",
+    "main.css": "/KozoWebsite/static/css/main.c260ff3e.css",
     "main.js": "/KozoWebsite/static/js/main.a56a3876.js",
     "static/js/453.68693753.chunk.js": "/KozoWebsite/static/js/453.68693753.chunk.js",
     "static/media/backgroundStars.png": "/KozoWebsite/static/media/backgroundStars.7a5ea4683e44bb509161.png",
@@ -28,6 +28,7 @@
     "static/media/Driak21_4.png": "/KozoWebsite/static/media/Driak21_4.7b46c8d1a08a6c581061.png",
     "static/media/Nexo_2.png": "/KozoWebsite/static/media/Nexo_2.0d87ca5ac6a9858a592a.png",
     "static/media/Driak21_thumbnail.png": "/KozoWebsite/static/media/Driak21_thumbnail.b34f211e0d4155e5d1f1.png",
+    "static/media/redNebula_3.png": "/KozoWebsite/static/media/redNebula_3.ceeed3064d25cefaadf4.png",
     "static/media/Nexo_1.png": "/KozoWebsite/static/media/Nexo_1.efa119d98ceaf48d3d44.png",
     "static/media/Yoshi_4.png": "/KozoWebsite/static/media/Yoshi_4.edd37d567d24869b968d.png",
     "static/media/Driak21_2.png": "/KozoWebsite/static/media/Driak21_2.6dd41388087748f5e8fa.png",
@@ -58,12 +59,12 @@
     "static/media/Moderniz.otf": "/KozoWebsite/static/media/Moderniz.bd11ffbaf79e58eb779d.otf",
     "static/media/aBlackLives.ttf": "/KozoWebsite/static/media/aBlackLives.03e841d4e5cd7b5968e5.ttf",
     "index.html": "/KozoWebsite/index.html",
-    "main.4609043b.css.map": "/KozoWebsite/static/css/main.4609043b.css.map",
+    "main.c260ff3e.css.map": "/KozoWebsite/static/css/main.c260ff3e.css.map",
     "main.a56a3876.js.map": "/KozoWebsite/static/js/main.a56a3876.js.map",
     "453.68693753.chunk.js.map": "/KozoWebsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4609043b.css",
+    "static/css/main.c260ff3e.css",
     "static/js/main.a56a3876.js"
   ]
 }
