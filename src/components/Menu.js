@@ -52,7 +52,7 @@ function Menu() {
                 <nav class="navbar">
                     <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>
                     <a onClick={academyClick} class="lien link--mneme">The Academy</a>
-                    <a onClick={bookNowClick} class="lien link--mneme">Book Now</a>
+                    <a onClick = {bookNowClick} className='bookNowButtonMenu'>Book</a>
                 </nav>
             </header>
         </div>

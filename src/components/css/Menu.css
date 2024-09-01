@@ -125,6 +125,22 @@
   opacity: 0;
 }
 
+.bookNowButtonMenu {
+  background-image: url('/public/images/PurpleNebula.png');
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 8px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px !important; 
+}
+
 @keyframes coverUp {
   0% {
     transform-origin: 50% 100%;
