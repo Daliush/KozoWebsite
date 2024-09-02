@@ -50,9 +50,9 @@ function Menu() {
                 </div>
                 <i class='bx bx-menu' id="menu-icon"></i>
                 <nav class="navbar">
-                    <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>
                     <a onClick={academyClick} class="lien link--mneme">The Academy</a>
-                    <a onClick = {bookNowClick} className='bookNowButtonMenu'>Book</a>
+                    <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>
+                    <a onClick={bookNowClick} className='bookNowButtonMenu'>Book</a>
                 </nav>
             </header>
         </div>

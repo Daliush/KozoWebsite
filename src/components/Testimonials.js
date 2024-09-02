@@ -39,6 +39,21 @@ import Yoshi2 from '../images/Yoshi_2.png'
 import Yoshi3 from '../images/Yoshi_3.png'
 import Yoshi4 from '../images/Yoshi_4.png'
 import ukFlag from '../images/ukFlag.png'
+import Driak215 from '../images/Driak21_5.png'
+import ElToredo3 from '../images/ElToredo_3.png'
+import elyfro4 from '../images/Elyfro_4.png'
+import fianso5 from '../images/Fianso_5.png'
+import kheops3 from '../images/Kheops_3.png'
+import light2 from '../images/Light_2.png'
+import Nexo4 from '../images/Nexo_4.png'
+import Psyko3 from '../images/Psyko_3.png'
+import Yoshi5 from '../images/Yoshi_5.png'
+import BelbarbThumbnail from '../images/Belbarb_Thumbnail.png'
+import Belbarb1 from '../images/Belbarb_1.png'
+import Belbarb2 from '../images/Belbarb_2.png'
+import Belbarb3 from '../images/Belbarb_3.png'
+import Belbarb4 from '../images/Belbarb_4.png'
+import Belbarb5 from '../images/Belbarb_5.png'
 import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
@@ -217,6 +232,17 @@ function Testimonials() {
                             <img className='imageTestimonial' src={PsykoThumbnail} alt="PsykoThumbnail" />
                         </div>
                     </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial9'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Belbarb</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={BelbarbThumbnail} alt="BelbarbThumbnail" />
+                        </div>
+                    </div>
                 </div>
                 <button class="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
 
@@ -237,6 +263,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images0'>
                         <img src={Driak211} alt="Driak211" class="carousel-image active" />
+                        <img src={Driak215} alt="Driak215" class="carousel-image" />
                         <img src={Driak212} alt="Driak212" class="carousel-image" />
                         <img src={Driak213} alt="Driak213" class="carousel-image" />
                         <img src={Driak214} alt="Driak214" class="carousel-image" />
@@ -251,6 +278,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images1'>
                         <img src={kheops1} alt="kheops1" class="carousel-image active" />
+                        <img src={kheops3} alt="kheops3" class="carousel-image" />
                         <img src={kheops2} alt="kheops2" class="carousel-image" />
                     </div>
 
@@ -264,6 +292,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images2'>
                         <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
+                        <img src={elyfro4} alt='elyfro4' class="carousel-image" />
                         <img src={elyfro2} alt='elyfro2' class="carousel-image" />
                         <img src={elyfro3} alt='elyfro3' class="carousel-image" />
                     </div>
@@ -278,6 +307,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images3'>
                         <img src={fianso1} alt='fianso1' class="carousel-image active" />
+                        <img src={fianso5} alt='fianso5' class="carousel-image" />
                         <img src={fianso2} alt='fianso2' class="carousel-image" />
                         <img src={fianso3} alt='fianso3' class="carousel-image" />
                         <img src={fianso4} alt='fianso4' class="carousel-image" />
@@ -293,6 +323,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images4'>
                         <img src={light1} alt='light1' class="carousel-image active" />
+                        <img src={light2} alt='light2' class="carousel-image" />
                     </div>
 
                 </div>
@@ -305,6 +336,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images5'>
                         <img src={ElToredo1} alt='eltoredo1' class="carousel-image active" />
+                        <img src={ElToredo3} alt='eltoredo3' class="carousel-image" />
                         <img src={ElToredo2} alt='eltoredo2' class="carousel-image" />
                     </div>
 
@@ -319,6 +351,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images6'>
                         <img src={Nexo1} alt='nexo1' class="carousel-image active" />
+                        <img src={Nexo4} alt='nexo4' class="carousel-image" />
                         <img src={Nexo2} alt='nexo2' class="carousel-image" />
                         <img src={Nexo3} alt='nexo3' class="carousel-image" />
                     </div>
@@ -333,6 +366,7 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images7'>
                         <img src={Yoshi1} alt='Yoshi1' class="carousel-image active" />
+                        <img src={Yoshi5} alt='Yoshi5' class="carousel-image" />
                         <img src={Yoshi2} alt='Yoshi2' class="carousel-image" />
                         <img src={Yoshi3} alt='Yoshi3' class="carousel-image" />
                         <img src={Yoshi4} alt='Yoshi4' class="carousel-image" />
@@ -348,7 +382,26 @@ function Testimonials() {
 
                     <div class="carousel-images" id='carousel-images8'>
                         <img src={Psyko1} alt='Psyko1' class="carousel-image active" />
+                        <img src={Psyko3} alt='Psyko3' class="carousel-image" />
                         <img src={Psyko2} alt='Psyko2' class="carousel-image" />
+
+                    </div>
+
+                </div>
+            </dialog>
+
+
+            <dialog className='modal' id='modal10'>
+                <button class="carousel-button left" id='left10'>&#10094;</button>
+                <button class="carousel-button right" id='right10'>&#10095;</button>
+                <div class="carousel-container">
+
+                    <div class="carousel-images" id='carousel-images9'>
+                        <img src={Belbarb1} alt='Belbarb1' class="carousel-image active" />
+                        <img src={Belbarb2} alt='Belbarb2' class="carousel-image" />
+                        <img src={Belbarb3} alt='Belbarb3' class="carousel-image" />
+                        <img src={Belbarb4} alt='Belbarb4' class="carousel-image" />
+                        <img src={Belbarb5} alt='Belbarb5' class="carousel-image" />
 
                     </div>
 
