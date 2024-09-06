@@ -20,7 +20,7 @@ function Menu() {
     }
 
     const academyClick = () => {
-        navigate('/KozoWebsite/academy')
+        navigate('/KozoWebsite/academy#beginning')
     }
 
     useEffect(() => {

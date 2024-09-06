@@ -12,8 +12,10 @@ function AboutMe() {
     // Scroll to the element with ID that matches the hash in the URL
     if (location.hash) {
       const element = document.getElementById(location.hash.substring(1));
+      const y = element.getBoundingClientRect().top + window.scrollY - 100;
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        //element.scrollIntoView({ behavior: 'smooth'});
+        window.scrollTo({top: y, behavior: 'smooth'});
       }
     }
 

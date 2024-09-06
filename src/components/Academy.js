@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 import myImage from '../images/tengenSmiling.jpg';
 import logo from '../images/logo.png';
 import underConstruction from '../images/UnderConstruction.png'
+import { useLocation } from 'react-router-dom';
 function Academy() {
+    const location = useLocation();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -19,9 +21,17 @@ function Academy() {
         const hiddenElems = document.querySelectorAll(".hidden");
         hiddenElems.forEach((el) => observer.observe(el));
 
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' , block: "center"});
+            }
+          }
+
     }, []);
     return (
         <div className="TheAcademy">
+            <div id='beginning'></div>
             <div className='construction'>
                 <h2>The Academy will be available soon</h2>
                 <img src={underConstruction} />
