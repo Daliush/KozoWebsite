@@ -49,11 +49,18 @@
     transition-delay: 400ms;
 }
 .textWhoAmI:nth-child(3) {
-    transition-delay: 800ms;
+    transition-delay: 600ms;
 }
 .textWhoAmI:nth-child(4) {
+    transition-delay: 800ms;
+}
+.textWhoAmI:nth-child(5) {
+    transition-delay: 1000ms;
+}
+.textWhoAmI:nth-child(6) {
     transition-delay: 1200ms;
 }
+
 
 .WhyAmIContainer {
     display: flex;
