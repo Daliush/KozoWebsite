@@ -42,7 +42,7 @@
     align-items: center; /* Center text vertically within each paragraph */
     margin: 0; /* Remove default margin from paragraphs */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .textWhoAmI:nth-child(2) {
