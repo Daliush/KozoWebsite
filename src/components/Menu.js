@@ -37,9 +37,9 @@ function Menu() {
     }, []);
     return (
         <div className='Menu'>
-            <header class="header" id='navbar'>
+            <header className="header" id='navbar'>
                 <div className='logoHome' onClick={logoClick}>
-                    <img class="logo" src={logo} />
+                    <img className="logo" src={logo} />
                     {
                         (
                             location.pathname.includes("aboutMe") ||
@@ -48,10 +48,10 @@ function Menu() {
                         && <a className='homeA'><u>Home</u></a>
                     }
                 </div>
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <nav class="navbar">
-                    <a onClick={academyClick} class="lien link--mneme">The Academy</a>
-                    <a onClick={aboutMeClick} class="lien link--mneme">About Me</a>
+                <i className='bx bx-menu' id="menu-icon"></i>
+                <nav className="navbar">
+                    <a onClick={academyClick} className="lien link--mneme">The Academy</a>
+                    <a onClick={aboutMeClick} className="lien link--mneme">About Me</a>
                     <a onClick={bookNowClick} className='bookNowButtonMenu'>Book</a>
                 </nav>
             </header>

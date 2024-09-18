@@ -60,7 +60,7 @@ function Story() {
                         <img src={quotes} className='quotes quoteEnd'></img>
                     </p>
                     <p>
-                        Kozo
+                        <i>Kozo</i>
                     </p>
 
                 </div>

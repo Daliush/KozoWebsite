@@ -61,7 +61,6 @@ function Testimonials() {
         const modals = document.getElementsByClassName('modal');
         const openModals = document.getElementsByClassName('cardTestimonial')
         let images;
-        console.log(openModals);
 
         Array.from(openModals).forEach((openModal, index) => {
             openModal.addEventListener('click', () => {
@@ -102,7 +101,6 @@ function Testimonials() {
             showImage(currentIndex);
         }
 
-        console.log(document.getElementsByClassName('left'));
         Array.from(document.getElementsByClassName('left')).forEach((left) => {
             left.addEventListener('click', prevImage)
         })
@@ -129,7 +127,7 @@ function Testimonials() {
                 Some of the feedbacks over the last 2 months
             </h2>
             <div className='sliderContainer'>
-                <button class="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
+                <button className="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
 
                 <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                     <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
@@ -244,7 +242,7 @@ function Testimonials() {
                         </div>
                     </div>
                 </div>
-                <button class="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
+                <button className="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
 
             </div>
 
@@ -257,87 +255,87 @@ function Testimonials() {
 
 
             <dialog className='modal' id='modal1'>
-                <button class="carousel-button left" id='left0'>&#10094;</button>
-                <button class="carousel-button right" id='right0'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left0'>&#10094;</button>
+                <button className="carousel-button right" id='right0'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images0'>
-                        <img src={Driak211} alt="Driak211" class="carousel-image active" />
-                        <img src={Driak215} alt="Driak215" class="carousel-image" />
-                        <img src={Driak212} alt="Driak212" class="carousel-image" />
-                        <img src={Driak213} alt="Driak213" class="carousel-image" />
-                        <img src={Driak214} alt="Driak214" class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images0'>
+                        <img src={Driak211} alt="Driak211" className="carousel-image active" />
+                        <img src={Driak215} alt="Driak215" className="carousel-image" />
+                        <img src={Driak212} alt="Driak212" className="carousel-image" />
+                        <img src={Driak213} alt="Driak213" className="carousel-image" />
+                        <img src={Driak214} alt="Driak214" className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
             <dialog className='modal' id='modal2'>
-                <button class="carousel-button left" id='left2'>&#10094;</button>
-                <button class="carousel-button right" id='right2'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left2'>&#10094;</button>
+                <button className="carousel-button right" id='right2'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images1'>
-                        <img src={kheops1} alt="kheops1" class="carousel-image active" />
-                        <img src={kheops3} alt="kheops3" class="carousel-image" />
-                        <img src={kheops2} alt="kheops2" class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images1'>
+                        <img src={kheops1} alt="kheops1" className="carousel-image active" />
+                        <img src={kheops3} alt="kheops3" className="carousel-image" />
+                        <img src={kheops2} alt="kheops2" className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal3'>
-                <button class="carousel-button left" id='left3'>&#10094;</button>
-                <button class="carousel-button right" id='right3'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left3'>&#10094;</button>
+                <button className="carousel-button right" id='right3'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images2'>
-                        <img src={elyfro1} alt='elyfro1' class="carousel-image active" />
-                        <img src={elyfro4} alt='elyfro4' class="carousel-image" />
-                        <img src={elyfro2} alt='elyfro2' class="carousel-image" />
-                        <img src={elyfro3} alt='elyfro3' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images2'>
+                        <img src={elyfro1} alt='elyfro1' className="carousel-image active" />
+                        <img src={elyfro4} alt='elyfro4' className="carousel-image" />
+                        <img src={elyfro2} alt='elyfro2' className="carousel-image" />
+                        <img src={elyfro3} alt='elyfro3' className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal4'>
-                <button class="carousel-button left" id='left4'>&#10094;</button>
-                <button class="carousel-button right" id='right4'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left4'>&#10094;</button>
+                <button className="carousel-button right" id='right4'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images3'>
-                        <img src={fianso1} alt='fianso1' class="carousel-image active" />
-                        <img src={fianso5} alt='fianso5' class="carousel-image" />
-                        <img src={fianso2} alt='fianso2' class="carousel-image" />
-                        <img src={fianso3} alt='fianso3' class="carousel-image" />
-                        <img src={fianso4} alt='fianso4' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images3'>
+                        <img src={fianso1} alt='fianso1' className="carousel-image active" />
+                        <img src={fianso5} alt='fianso5' className="carousel-image" />
+                        <img src={fianso2} alt='fianso2' className="carousel-image" />
+                        <img src={fianso3} alt='fianso3' className="carousel-image" />
+                        <img src={fianso4} alt='fianso4' className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal5'>
-                <button class="carousel-button left" id='left5'>&#10094;</button>
-                <button class="carousel-button right" id='right5'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left5'>&#10094;</button>
+                <button className="carousel-button right" id='right5'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images4'>
-                        <img src={light1} alt='light1' class="carousel-image active" />
-                        <img src={light2} alt='light2' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images4'>
+                        <img src={light1} alt='light1' className="carousel-image active" />
+                        <img src={light2} alt='light2' className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal6'>
-                <button class="carousel-button left" id='left6'>&#10094;</button>
-                <button class="carousel-button right" id='right6'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left6'>&#10094;</button>
+                <button className="carousel-button right" id='right6'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images5'>
-                        <img src={ElToredo1} alt='eltoredo1' class="carousel-image active" />
-                        <img src={ElToredo3} alt='eltoredo3' class="carousel-image" />
-                        <img src={ElToredo2} alt='eltoredo2' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images5'>
+                        <img src={ElToredo1} alt='eltoredo1' className="carousel-image active" />
+                        <img src={ElToredo3} alt='eltoredo3' className="carousel-image" />
+                        <img src={ElToredo2} alt='eltoredo2' className="carousel-image" />
                     </div>
 
                 </div>
@@ -345,45 +343,45 @@ function Testimonials() {
 
 
             <dialog className='modal' id='modal7'>
-                <button class="carousel-button left" id='left7'>&#10094;</button>
-                <button class="carousel-button right" id='right7'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left7'>&#10094;</button>
+                <button className="carousel-button right" id='right7'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images6'>
-                        <img src={Nexo1} alt='nexo1' class="carousel-image active" />
-                        <img src={Nexo4} alt='nexo4' class="carousel-image" />
-                        <img src={Nexo2} alt='nexo2' class="carousel-image" />
-                        <img src={Nexo3} alt='nexo3' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images6'>
+                        <img src={Nexo1} alt='nexo1' className="carousel-image active" />
+                        <img src={Nexo4} alt='nexo4' className="carousel-image" />
+                        <img src={Nexo2} alt='nexo2' className="carousel-image" />
+                        <img src={Nexo3} alt='nexo3' className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal8'>
-                <button class="carousel-button left" id='left8'>&#10094;</button>
-                <button class="carousel-button right" id='right8'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left8'>&#10094;</button>
+                <button className="carousel-button right" id='right8'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images7'>
-                        <img src={Yoshi1} alt='Yoshi1' class="carousel-image active" />
-                        <img src={Yoshi5} alt='Yoshi5' class="carousel-image" />
-                        <img src={Yoshi2} alt='Yoshi2' class="carousel-image" />
-                        <img src={Yoshi3} alt='Yoshi3' class="carousel-image" />
-                        <img src={Yoshi4} alt='Yoshi4' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images7'>
+                        <img src={Yoshi1} alt='Yoshi1' className="carousel-image active" />
+                        <img src={Yoshi5} alt='Yoshi5' className="carousel-image" />
+                        <img src={Yoshi2} alt='Yoshi2' className="carousel-image" />
+                        <img src={Yoshi3} alt='Yoshi3' className="carousel-image" />
+                        <img src={Yoshi4} alt='Yoshi4' className="carousel-image" />
                     </div>
 
                 </div>
             </dialog>
 
             <dialog className='modal' id='modal9'>
-                <button class="carousel-button left" id='left9'>&#10094;</button>
-                <button class="carousel-button right" id='right9'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left9'>&#10094;</button>
+                <button className="carousel-button right" id='right9'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images8'>
-                        <img src={Psyko1} alt='Psyko1' class="carousel-image active" />
-                        <img src={Psyko3} alt='Psyko3' class="carousel-image" />
-                        <img src={Psyko2} alt='Psyko2' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images8'>
+                        <img src={Psyko1} alt='Psyko1' className="carousel-image active" />
+                        <img src={Psyko3} alt='Psyko3' className="carousel-image" />
+                        <img src={Psyko2} alt='Psyko2' className="carousel-image" />
 
                     </div>
 
@@ -392,16 +390,16 @@ function Testimonials() {
 
 
             <dialog className='modal' id='modal10'>
-                <button class="carousel-button left" id='left10'>&#10094;</button>
-                <button class="carousel-button right" id='right10'>&#10095;</button>
-                <div class="carousel-container">
+                <button className="carousel-button left" id='left10'>&#10094;</button>
+                <button className="carousel-button right" id='right10'>&#10095;</button>
+                <div className="carousel-container">
 
-                    <div class="carousel-images" id='carousel-images9'>
-                        <img src={Belbarb1} alt='Belbarb1' class="carousel-image active" />
-                        <img src={Belbarb2} alt='Belbarb2' class="carousel-image" />
-                        <img src={Belbarb3} alt='Belbarb3' class="carousel-image" />
-                        <img src={Belbarb4} alt='Belbarb4' class="carousel-image" />
-                        <img src={Belbarb5} alt='Belbarb5' class="carousel-image" />
+                    <div className="carousel-images" id='carousel-images9'>
+                        <img src={Belbarb1} alt='Belbarb1' className="carousel-image active" />
+                        <img src={Belbarb2} alt='Belbarb2' className="carousel-image" />
+                        <img src={Belbarb3} alt='Belbarb3' className="carousel-image" />
+                        <img src={Belbarb4} alt='Belbarb4' className="carousel-image" />
+                        <img src={Belbarb5} alt='Belbarb5' className="carousel-image" />
 
                     </div>
 

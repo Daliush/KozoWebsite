@@ -40,7 +40,7 @@ function Book() {
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>New Recruits</p>
                         <p className='description'>
-                            1 hour discount for new recruits. Get a coaching cheaper
+                            1 hour discount for new recruits. Get a cheaper coaching
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
