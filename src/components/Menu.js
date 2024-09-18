@@ -8,19 +8,19 @@ function Menu() {
     const location = useLocation();
 
     const bookNowClick = () => {
-        navigate('/KozoWebsite/aboutMe#bookNow')
+        navigate('/aboutMe#bookNow')
     }
 
     const aboutMeClick = () => {
-        navigate('/KozoWebsite/aboutMe#StoryBody')
+        navigate('/aboutMe#StoryPage')
     }
 
     const logoClick = () => {
-        navigate('/KozoWebsite/#welcome')
+        navigate('/#welcome')
     }
 
     const academyClick = () => {
-        navigate('/KozoWebsite/academy#beginning')
+        navigate('/academy#beginning')
     }
 
     useEffect(() => {

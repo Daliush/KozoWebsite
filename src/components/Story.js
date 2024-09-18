@@ -8,7 +8,7 @@ import quotes from '../images/quotes.png'
 import tengen from '../images/tengenSmiling.jpg'
 function Story() {
     return (
-        <div className='StoryPage'>
+        <div className='StoryPage' id='StoryPage'>
             <div className='imagesTop'>
                 <div className='imgFlouContainer'>
                 <img className='imgFlou' src={tengen}></img>
@@ -23,41 +23,44 @@ function Story() {
 
                     <img src={quotes} className='quotes quoteStart'></img>
                     <p className='titleStory'>
-                        La plupart des coachs Challenger ont fait exactement comme vous, ils ont spammé les games et obtenu un résultat différent.
-                    </p>
+                    Most Challenger coaches did exactly what you did: they spammed games and got a different result.                    </p>
                     <p className='contentStory'>
-                        Moi spammer les games ça m'a pas amené plus loin que D4, peu importe mon acharnement et le nombre de vidéos youtube.
-                        <br></br>-&gt; J'ai du chercher toutes les connaissances dans la psychologie de maximisation de performances pendant plusieurs années, appris de coach parmis les meilleurs au monde dans quasi tous les rôles pour rien laisser au hasard sur mes offroles du moment et par faim de connaissances.
-                        <br></br>-&gt; C'est ce qui m'a permis de monter rang 512 en EUW.
-                        <br></br><br></br>Savoir consciemment créer des résultats qui peuvent être répétés pour la vaste majorité des joueurs.
+                    For me, spamming games <b>didn’t take me further than D4</b>, no matter how <b>persistent</b> I was or how many YouTube videos I watched.
+                        <br></br>-&gt; I had to search for all the <b>knowledge</b> in <b>performance maximization</b> psychology for several years, learning from some of the <b>best coaches in the world</b> in nearly all roles to <b>leave nothing to luck</b> on my off-roles at the time and out of a <b>hunger for knowledge</b>.
+                        <br></br>-&gt; This is what allowed me to climb to rank 512 in EUW.
+                        <br></br><br></br><b>Consciously</b> knowing how to create results that can be <b>repeated</b> for the vast majority of players.
                     </p>
 
                     <p className='titleStory'>
-                        C'est un peu difficile d'apprendre à quelqu'un à faire ce qu'on a pas fait soi-même.
+                    It's a bit difficult to teach someone to do something you haven't done yourself. 
                     </p>
 
                     <p className='contentStory'>
-                        -&gt; C'est à dire complètement détruire son plafond de verre (soi-disant DNA gap).
-                        <br></br>-&gt; Mais j'ai été obligé de le faire pour atteindre le Haut Grandmaster 689LP après 5 ans sans pouvoir sortir du low Diamant.
+                        -&gt; Meaning, <b>completely breaking through your glass ceiling</b> (the so-called DNA gap). 
+                        <br></br>-&gt; But I had to do it to reach <b>High Grandmaster at 689 LP</b> after 5 years of being stuck in <b>low Diamond.</b>
                     </p>
 
                     <p className='titleStory'>
-                        Si je coachais le moi d'il y a 3 ans il l'aurait fait en 6 mois environ.                </p>
-
-                    <p className='contentStory'>
-                        Je suis absolument certain que vous ne trouverez nul part une méthodologie aussi efficace pour progresser et climb
-                        D'autant que j'ai du développer des connaissances de Haut Challenger pour compenser un cerveau pour le moins distrait quand il s'agit de jouer.
+                    If I coached the me of 3 years ago, he would have done it in about 6 months.
                     </p>
 
                     <p className='contentStory'>
-                        J'ai créé une académie pour créer des résultats insensés pour la plupart des joueurs, le tout dans une atmosphère saine où tout le monde veut progresser. D'autant que je connais le fond du problème et comment le régler et les coachs qui déblatèrent des connaissances inefficaces m'exaspérait.
-                        Je forme notamment des joueurs qui seront mes futurs coach et ils pourront perpétuer ma philosophie dans l'académie quand je serai plus occupé à niveau pro.
+                    I am <b>absolutely certain</b> that you won't find a methodology <b>anywhere else</b> as <b>effective</b> for <b>improving and climbing.</b> 
+                    Especially since I had to develop <b>High Challenger-level knowledge</b> to compensate for a brain that’s, to say the least, easily <b>distracted</b> when it comes to playing.
                     </p>
 
                     <p className='contentStory'>
-                        Ma méthodologie marche très efficacement sur tous mes étudiants investis, de tous rôles, de tous rangs, alors pourquoi pas toi?
-                        <br></br>Si t'es prêt à remettre en question ce que tu crois savoir et la dalle de progresser, mon académie est faite pour toi 🙂
+                    I created an <b>academy</b> to produce <b>insane results</b> for most players, all in a <b>healthy atmosphere</b> where everyone wants to <b>improve</b>. I know the <b>root of the problem</b> and how to <b>solve it</b>, and coaches spouting <b>ineffective knowledge would drive me crazy</b>.
+                    I’m <b>training</b> players who will be my <b>future coaches</b>, and they will carry on my <b>philosophy</b> in the academy when I’m busy at the <b>pro level</b>.
+                    </p>
+
+                    <p className='contentStory'>
+                    <b>My methodology works very effectively on all my committed students, of all roles, of all ranks, so why not you?</b>
+                        <br></br>If you're ready to question what you think you know and have the hunger to improve, my academy is made for you. 🙂
                         <img src={quotes} className='quotes quoteEnd'></img>
+                    </p>
+                    <p>
+                        Kozo
                     </p>
 
                 </div>

@@ -7,7 +7,7 @@ function WhoAmI() {
     const navigate = useNavigate();
 
     const aboutMeClick = () => {
-        navigate('/KozoWebsite/aboutMe#StoryBody')
+        navigate('/aboutMe#StoryPage')
     }
     return (
         <div className="WhoAmIText">
