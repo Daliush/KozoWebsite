@@ -36,6 +36,9 @@ function Book() {
                     </div>
                 </div>
                 <div className="card">
+                    <div class="banner">
+                        <p>New recruits</p>
+                    </div>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>New Recruits</p>
@@ -54,7 +57,7 @@ function Book() {
                         </div>
                         <hr />
                         <div className='link'>
-                        <a href="https://discord.gg/vRVY932SgB" target='_blank'>
+                            <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
                                 <div className='bookButton'>
                                     Book your plan
                                 </div>
@@ -63,11 +66,14 @@ function Book() {
                     </div>
                 </div>
                 <div className="card">
+                <div class="banner">
+                        <p>Up to -30%</p>
+                    </div>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>1 month plan</p>
                         <p className='description'>
-                        Get a daily followup on your progress with one of the juicy monthly plans
+                            Get a daily followup on your progress with one of the juicy monthly plans
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
@@ -81,7 +87,7 @@ function Book() {
                         </div>
                         <hr />
                         <div className='link'>
-                        <a href="https://discord.gg/cdvtufDfQR" target='_blank'>
+                            <a href="https://discord.gg/cdvtufDfQR" target='_blank'>
                                 <div className='bookButton'>
                                     Book your plan
                                 </div>
