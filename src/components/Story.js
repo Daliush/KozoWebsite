@@ -26,7 +26,7 @@ function Story() {
                     Most Challenger coaches did exactly what you did: they spammed games and got a different result.                    </p>
                     <p className='contentStory'>
                     For me, spamming games <b>didn’t take me further than D4</b>, no matter how <b>persistent</b> I was or how many YouTube videos I watched.
-                        <br></br>-&gt; I had to search for all the <b>knowledge</b> in <b>performance maximization</b> psychology for several years, learning from some of the <b>best coaches in the world</b> in nearly all roles to <b>leave nothing to luck</b> on my off-roles at the time and out of a <b>hunger for knowledge</b>.
+                        <br></br>-&gt; I had to search for all the <b>knowledge</b> in <b>peak performance</b> psychology for several years, learning from some of the <b>best coaches in the world</b> in nearly all roles to <b>leave nothing to luck</b> on my off-roles at the time and out of a <b>hunger for knowledge</b>.
                         <br></br>-&gt; This is what allowed me to climb to rank 512 in EUW.
                         <br></br><br></br><b>Consciously</b> knowing how to create results that can be <b>repeated</b> for the vast majority of players.
                     </p>
@@ -41,12 +41,11 @@ function Story() {
                     </p>
 
                     <p className='titleStory'>
-                    If I coached the me of 3 years ago, he would have done it in about 6 months.
+                    If I coached the me of 4 years ago, he would have done it in about 6 months.
                     </p>
 
                     <p className='contentStory'>
-                    I am <b>absolutely certain</b> that you won't find a methodology <b>anywhere else</b> as <b>effective</b> for <b>improving and climbing.</b> 
-                    Especially since I had to develop <b>High Challenger-level knowledge</b> to compensate for a brain that’s, to say the least, easily <b>distracted</b> when it comes to playing.
+                    I am <b>absolutely certain</b> that you won't find a methodology <b>anywhere else</b> as <b>effective</b> for <b>improving and climbing.</b> Especially since I had to develop a <b>High Challenger-level knowledge</b> to compensate for a brain that’s, to say the least, easily <b>distracted</b> when it comes to playing.
                     </p>
 
                     <p className='contentStory'>
@@ -55,7 +54,7 @@ function Story() {
                     </p>
 
                     <p className='contentStory'>
-                    <b>My methodology works very effectively on all my committed students, of all roles, of all ranks, so why not you?</b>
+                    <b>My methodology works very effectively on all of my committed students, of all roles, of all ranks, so why not you?</b>
                         <br></br>If you're ready to question what you think you know and have the hunger to improve, my academy is made for you. 🙂
                         <img src={quotes} className='quotes quoteEnd'></img>
                     </p>
