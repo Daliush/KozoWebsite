@@ -116,6 +116,11 @@
 
     .imgLobby {
         width: 80%;
+        margin-left: 50px;
+    }
+
+    .imgFlou {
+       opacity: 0; 
     }
 
 }

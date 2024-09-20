@@ -23,6 +23,14 @@ function Menu() {
         navigate('/academy#beginning')
     }
 
+    function showSidebar() {
+        document.getElementById('sidebar').style.display = 'flex';
+    }
+
+    
+    function closeSidebar() {
+        document.getElementById('sidebar').style.display = 'none';
+    }
     useEffect(() => {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
@@ -53,8 +61,16 @@ function Menu() {
                     <a onClick={academyClick} className="lien link--mneme">The Academy</a>
                     <a onClick={aboutMeClick} className="lien link--mneme">About Me</a>
                     <a onClick={bookNowClick} className='bookNowButtonMenu'>Book</a>
+                    <a onClick={showSidebar} className='showSidebar'>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="35px" fill="#ffffff"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+                        </a>
                 </nav>
             </header>
+            <nav className="sidebar" id='sidebar'>
+            <div className='sideBarItem' onClick={closeSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></div>
+                    <div className='sideBarItem sidebarLink'><a onClick={academyClick} className="">The Academy</a></div>
+                    <div className='sideBarItem sidebarLink'><a onClick={aboutMeClick} className="">About Me</a></div>
+            </nav>
         </div>
     )
 }

@@ -55,7 +55,6 @@
 
 .navbar a {
   color: #fff;
-  font-size: 18px;
   text-decoration: none;
   margin-left: 35px;
   transition: 0.3s;
@@ -72,6 +71,10 @@
   display: none;
 }
 
+a svg {
+  transform: translateY(12px);
+  margin-top: -100px;
+}
 /* BREAKPOINTS */
 @media (max-width: 992px) {
   .header {
@@ -141,6 +144,52 @@
   font-size: 20px !important; 
 }
 
+.centerSvg {
+  background-image: url('/public/images/PurpleNebula.png');
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 8px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px !important;
+  text-align: center;
+}
+.sidebar {
+  position : fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 99999;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5) ;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebarLink {
+  border-bottom:  #ffffff 2px solid ;
+}
+
+.sideBarItem {
+  margin: 30px 20px;
+  cursor: pointer;
+}
+
+.showSidebar {
+  display: none;
+}
+
 @keyframes coverUp {
   0% {
     transform-origin: 50% 100%;
@@ -160,5 +209,15 @@
   100% {
     transform-origin: 50% 0%;
     transform: scale3d(1, 0.045, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  .lien {
+      display: none;
+  }
+
+  .showSidebar {
+    display: inline;
   }
 }
