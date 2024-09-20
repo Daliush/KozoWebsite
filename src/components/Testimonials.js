@@ -54,6 +54,11 @@ import Belbarb2 from '../images/Belbarb_2.png'
 import Belbarb3 from '../images/Belbarb_3.png'
 import Belbarb4 from '../images/Belbarb_4.png'
 import Belbarb5 from '../images/Belbarb_5.png'
+import NelwyrThumbnail from '../images/Nelwyr_Thumbnail.png'
+import Nelwyr1 from '../images/Nelwyr_1.png'
+import Nelwyr2 from '../images/Nelwyr_2.png'
+import Nelwyr3 from '../images/Nelwyr_3.png'
+import Nelwyr4 from '../images/Nelwyr_4.png'
 import { useEffect } from 'react';
 function Testimonials() {
     useEffect(() => {
@@ -62,12 +67,13 @@ function Testimonials() {
         const openModals = document.getElementsByClassName('cardTestimonial')
         let images;
 
-        Array.from(openModals).forEach((openModal, index) => {
+        Array.from(openModals).forEach((openModal) => {
             openModal.addEventListener('click', () => {
                 currentIndex = 0;
-                const carouselDiv = document.getElementById("carousel-images" + index);
+                const currentId = openModal.id.match(/\d+/g)[0];
+                const carouselDiv = document.getElementById("carousel-images" + currentId);
                 images = carouselDiv.querySelectorAll("img");
-                modals[index].showModal();
+                document.getElementById("modal"+currentId).showModal();
             })
         })
 
@@ -121,6 +127,7 @@ function Testimonials() {
             testimonialContainer.scrollLeft -= containerWidth
         })
     }, []);
+    // CURRENT TESTIMONIAL ID = 10
     return (
         <div className="Testimonials" id='Testimonials'>
             <h2 className="hidden">
@@ -128,7 +135,7 @@ function Testimonials() {
             </h2>
             <div className='sliderContainer'>
                 <button className="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
-
+                
                 <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                     <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                         <div className="cardTestimonial" id='cardTestimonial0'>
@@ -140,6 +147,17 @@ function Testimonials() {
                                 <hr />
                                 <img className='imageTestimonial' src={Driak21Thumbnail} alt="driakThumb" />
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial10'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Nelwyr</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={NelwyrThumbnail} alt="NelwyrThumb" />
                         </div>
                     </div>
 
@@ -242,6 +260,7 @@ function Testimonials() {
                         </div>
                     </div>
                 </div>
+                
                 <button className="TestimonialsButton rightTesti" id='rightTestimonials'>&#10095;</button>
 
             </div>
@@ -254,7 +273,7 @@ function Testimonials() {
 
 
 
-            <dialog className='modal' id='modal1'>
+            <dialog className='modal' id='modal0'>
                 <button className="carousel-button left" id='left0'>&#10094;</button>
                 <button className="carousel-button right" id='right0'>&#10095;</button>
                 <div className="carousel-container">
@@ -269,7 +288,7 @@ function Testimonials() {
 
                 </div>
             </dialog>
-            <dialog className='modal' id='modal2'>
+            <dialog className='modal' id='modal1'>
                 <button className="carousel-button left" id='left2'>&#10094;</button>
                 <button className="carousel-button right" id='right2'>&#10095;</button>
                 <div className="carousel-container">
@@ -283,7 +302,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal3'>
+            <dialog className='modal' id='modal2'>
                 <button className="carousel-button left" id='left3'>&#10094;</button>
                 <button className="carousel-button right" id='right3'>&#10095;</button>
                 <div className="carousel-container">
@@ -298,7 +317,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal4'>
+            <dialog className='modal' id='modal3'>
                 <button className="carousel-button left" id='left4'>&#10094;</button>
                 <button className="carousel-button right" id='right4'>&#10095;</button>
                 <div className="carousel-container">
@@ -314,7 +333,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal5'>
+            <dialog className='modal' id='modal4'>
                 <button className="carousel-button left" id='left5'>&#10094;</button>
                 <button className="carousel-button right" id='right5'>&#10095;</button>
                 <div className="carousel-container">
@@ -327,7 +346,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal6'>
+            <dialog className='modal' id='modal5'>
                 <button className="carousel-button left" id='left6'>&#10094;</button>
                 <button className="carousel-button right" id='right6'>&#10095;</button>
                 <div className="carousel-container">
@@ -342,7 +361,7 @@ function Testimonials() {
             </dialog>
 
 
-            <dialog className='modal' id='modal7'>
+            <dialog className='modal' id='modal6'>
                 <button className="carousel-button left" id='left7'>&#10094;</button>
                 <button className="carousel-button right" id='right7'>&#10095;</button>
                 <div className="carousel-container">
@@ -357,7 +376,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal8'>
+            <dialog className='modal' id='modal7'>
                 <button className="carousel-button left" id='left8'>&#10094;</button>
                 <button className="carousel-button right" id='right8'>&#10095;</button>
                 <div className="carousel-container">
@@ -373,7 +392,7 @@ function Testimonials() {
                 </div>
             </dialog>
 
-            <dialog className='modal' id='modal9'>
+            <dialog className='modal' id='modal8'>
                 <button className="carousel-button left" id='left9'>&#10094;</button>
                 <button className="carousel-button right" id='right9'>&#10095;</button>
                 <div className="carousel-container">
@@ -389,7 +408,7 @@ function Testimonials() {
             </dialog>
 
 
-            <dialog className='modal' id='modal10'>
+            <dialog className='modal' id='modal9'>
                 <button className="carousel-button left" id='left10'>&#10094;</button>
                 <button className="carousel-button right" id='right10'>&#10095;</button>
                 <div className="carousel-container">
@@ -400,6 +419,22 @@ function Testimonials() {
                         <img src={Belbarb3} alt='Belbarb3' className="carousel-image" />
                         <img src={Belbarb4} alt='Belbarb4' className="carousel-image" />
                         <img src={Belbarb5} alt='Belbarb5' className="carousel-image" />
+
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal10'>
+                <button className="carousel-button left" id='left11'>&#10094;</button>
+                <button className="carousel-button right" id='right11'>&#10095;</button>
+                <div className="carousel-container">
+
+                    <div className="carousel-images" id='carousel-images10'>
+                        <img src={Nelwyr1} alt='Nelwyr1' className="carousel-image active" />
+                        <img src={Nelwyr2} alt='Nelwyr2' className="carousel-image" />
+                        <img src={Nelwyr3} alt='Nelwyr3' className="carousel-image" />
+                        <img src={Nelwyr4} alt='Nelwyr4' className="carousel-image" />
 
                     </div>
 
