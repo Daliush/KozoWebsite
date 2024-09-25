@@ -30,6 +30,11 @@ import NexoThumbnail from '../images/Nexo_thumbnail.png'
 import Nexo1 from '../images/Nexo_1.png'
 import Nexo2 from '../images/Nexo_2.png'
 import Nexo3 from '../images/Nexo_3.png'
+import Nexo4 from '../images/Nexo_4.png'
+import Nexo5 from '../images/Nexo_5.png'
+import Nexo6 from '../images/Nexo_6.png'
+import Nexo7 from '../images/Nexo_7.png'
+import Nexo8 from '../images/Nexo_8.png'
 import PsykoThumbnail from '../images/Psyko_thumbnail.png'
 import Psyko1 from '../images/Psyko_1.png'
 import Psyko2 from '../images/Psyko_2.png'
@@ -45,7 +50,6 @@ import elyfro4 from '../images/Elyfro_4.png'
 import fianso5 from '../images/Fianso_5.png'
 import kheops3 from '../images/Kheops_3.png'
 import light2 from '../images/Light_2.png'
-import Nexo4 from '../images/Nexo_4.png'
 import Psyko3 from '../images/Psyko_3.png'
 import Yoshi5 from '../images/Yoshi_5.png'
 import BelbarbThumbnail from '../images/Belbarb_Thumbnail.png'
@@ -131,12 +135,24 @@ function Testimonials() {
     return (
         <div className="Testimonials" id='Testimonials'>
             <h2 className="hidden">
-                Some of the feedbacks over the last 2 months
+                Some of the feedbacks over the last few months
             </h2>
             <div className='sliderContainer'>
                 <button className="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
+
                 
                 <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
+                    <div className="cardTestimonial" id='cardTestimonial6'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>NeXo</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={NexoThumbnail} alt="NexoThumb" />
+                        </div>
+                    </div>
+
                     <div className='cardTestimonialContainer' id='cardTestimonialContainer'>
                         <div className="cardTestimonial" id='cardTestimonial0'>
                             <div className='mainTestimonial'>
@@ -160,6 +176,7 @@ function Testimonials() {
                             <img className='imageTestimonial' src={NelwyrThumbnail} alt="NelwyrThumb" />
                         </div>
                     </div>
+
 
                     <div className="cardTestimonial" id='cardTestimonial1'>
                         <div className='mainTestimonial'>
@@ -213,17 +230,6 @@ function Testimonials() {
                             </div>
                             <hr />
                             <img className='imageTestimonial' src={ElToredoThumbnail} alt="EltoredoThumb" />
-                        </div>
-                    </div>
-
-                    <div className="cardTestimonial" id='cardTestimonial6'>
-                        <div className='mainTestimonial'>
-                            <div className='nameContainer'>
-                                <a>NeXo</a>
-                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
-                            </div>
-                            <hr />
-                            <img className='imageTestimonial' src={NexoThumbnail} alt="NexoThumb" />
                         </div>
                     </div>
 
@@ -368,9 +374,13 @@ function Testimonials() {
 
                     <div className="carousel-images" id='carousel-images6'>
                         <img src={Nexo1} alt='nexo1' className="carousel-image active" />
-                        <img src={Nexo4} alt='nexo4' className="carousel-image" />
                         <img src={Nexo2} alt='nexo2' className="carousel-image" />
                         <img src={Nexo3} alt='nexo3' className="carousel-image" />
+                        <img src={Nexo4} alt='nexo4' className="carousel-image" />
+                        <img src={Nexo5} alt='nexo5' className="carousel-image" />
+                        <img src={Nexo6} alt='nexo6' className="carousel-image" />
+                        <img src={Nexo7} alt='nexo7' className="carousel-image" />
+                        <img src={Nexo8} alt='nexo8' className="carousel-image" />
                     </div>
 
                 </div>
