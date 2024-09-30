@@ -18,7 +18,7 @@ function Book() {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>25 EUR</p>
+                                <p>20 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -78,7 +78,7 @@ function Book() {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>99 to 595,50 EUR</p>
+                                <p>99 to 545 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
