@@ -11,7 +11,7 @@ function HowItWorks() {
             </h2>
             <div className="Steps">
                 <div className="StepsItem Book hiddenRight">
-                    <h3 className="StepTitle">{t('book')} </h3>
+                    <h3 className="StepTitle">{t('bookBody')} </h3>
                     <p>{t('book1')} </p>
                 </div>
 

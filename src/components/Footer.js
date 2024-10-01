@@ -1,7 +1,9 @@
 import './css/Footer.css';
 import './css/Home.css';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 function Footer() {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     const bookNowClick = () => {
@@ -12,7 +14,7 @@ function Footer() {
             <hr className="solidSeparator"/>
             <div className='FooterContainer'>
                 <div className='BookNowButtonContainer'>
-                    <div onClick = {bookNowClick}className='bookNowButton'>Book Now</div>
+                    <div onClick = {bookNowClick}className='bookNowButton'>{t('bookNow')}</div>
                 </div>
             <div className="socials-container">
                 <a data-social="Twitter" style={{ '--accent-color': 'black' }} href="https://x.com/KozosTL_Academy" target="_blank">
