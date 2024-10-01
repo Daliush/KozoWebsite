@@ -1,8 +1,5 @@
 import './css/Testimonials.css';
 import './css/Home.css';
-import daliushTestimonials from '../images/testimonialDaliush.png'
-import zed from '../images/galaxy-slayer-zed-splash.jpg'
-import tengen from '../images/tengenSmiling.jpg'
 import elyfroThumbnail from '../images/Elyfro_thumbnail.png'
 import elyfro1 from '../images/Elyfro_1.png'
 import elyfro2 from '../images/Elyfro_2.png'
@@ -64,7 +61,9 @@ import Nelwyr2 from '../images/Nelwyr_2.png'
 import Nelwyr3 from '../images/Nelwyr_3.png'
 import Nelwyr4 from '../images/Nelwyr_4.png'
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 function Testimonials() {
+    const { t } = useTranslation();
     useEffect(() => {
 
         const modals = document.getElementsByClassName('modal');
@@ -135,7 +134,7 @@ function Testimonials() {
     return (
         <div className="Testimonials" id='Testimonials'>
             <h2 className="hidden">
-                Some of the feedbacks over the last few months
+                {t('someFeedbacks')}
             </h2>
             <div className='sliderContainer'>
                 <button className="TestimonialsButton leftTesti" id='leftTestimonials'>&#10094;</button>
