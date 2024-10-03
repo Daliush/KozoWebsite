@@ -224,6 +224,10 @@
       display: none;
   }
 
+  .hidePhone {
+    display: none;
+  }
+
   .showSidebar {
     display: inline;
   }

@@ -13,11 +13,15 @@ function Menu() {
         i18n.changeLanguage("fr");
         document.getElementById("fr").style.display = "none"
         document.getElementById("en").style.display = "inline"
+        document.getElementById("frPhone").style.display = "none"
+        document.getElementById("enPhone").style.display = "inline"
     };
     function changeLanguageEn() {
         i18n.changeLanguage("en");
         document.getElementById("en").style.display = "none"
         document.getElementById("fr").style.display = "inline"
+        document.getElementById("enPhone").style.display = "none"
+        document.getElementById("frPhone").style.display = "inline"
     };
     const navigate = useNavigate();
     const location = useLocation();
@@ -49,6 +53,7 @@ function Menu() {
     useEffect(() => {
         const currentLanguage = i18n.language.split('-')[0];
         document.getElementById(currentLanguage).style.display = "none"
+        document.getElementById(currentLanguage + 'Phone').style.display = "none"
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
@@ -78,10 +83,10 @@ function Menu() {
                     <a onClick={academyClick} className="lien link--mneme">{t('academy')}</a>
                     <a onClick={aboutMeClick} className="lien link--mneme">{t('aboutMe')}</a>
                     <a onClick={bookNowClick} className='bookNowButtonMenu'>{t('book')}</a>
-                    <a id='fr'>
+                    <a id='fr' className='hidePhone'>
                         <img src={frenchFlag} alt="frenchFlag" onClick={changeLanguageFr} className='flagMenu' />
                     </a>
-                    <a id='en'>
+                    <a id='en' className='hidePhone'>
                         <img src={ukFlag} alt="ukFlag" onClick={changeLanguageEn} className='flagMenu' />
                     </a>
 
@@ -96,6 +101,16 @@ function Menu() {
                 <div className='sideBarItem' onClick={closeSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" /></svg></div>
                 <div className='sideBarItem sidebarLink'><a onClick={academyClick} className="">{t('academy')}</a></div>
                 <div className='sideBarItem sidebarLink'><a onClick={aboutMeClick} className="">{t('aboutMe')}</a></div>
+                <div className='sideBarItem' id='frPhone'>
+                    <a >
+                        <img src={frenchFlag} alt="frenchFlag" onClick={changeLanguageFr} className='flagMenu' />
+                    </a>
+                </div>
+                <div className='sideBarItem' id='enPhone'>
+                    <a >
+                        <img src={ukFlag} alt="ukFlag" onClick={changeLanguageEn} className='flagMenu' />
+                    </a>
+                </div>
             </nav>
         </div>
     )
