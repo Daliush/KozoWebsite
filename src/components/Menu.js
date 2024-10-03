@@ -47,7 +47,7 @@ function Menu() {
         document.getElementById('sidebar').style.display = 'none';
     }
     useEffect(() => {
-        const currentLanguage = i18n.language;
+        const currentLanguage = i18n.language.split('-')[0];
         document.getElementById(currentLanguage).style.display = "none"
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
