@@ -50,5 +50,13 @@
     "body32" : "I created an <b>academy</b> to produce <b>insane results</b> for most players, all in a <b>healthy atmosphere</b> where everyone wants to <b>improve</b>. I know the <b>root of the problem</b> and how to <b>solve it</b>, and coaches spouting <b>ineffective knowledge would drive me crazy</b>.",
     "body33" : " I’m <b>training</b> players who will be my <b>future coaches</b>, and they will carry on my <b>philosophy</b> in the academy when I’m busy at the <b>pro level</b>.",
     "body34" : "<b>My methodology works very effectively on all of my committed students, of all roles, of all ranks, so why not you?</b>",
-    "body35" : "If you're ready to question what you think you know and have the hunger to improve, my academy is made for you. 🙂"
+    "body35" : "If you're ready to question what you think you know and have the hunger to improve, my academy is made for you. 🙂",
+
+    "chosePlan" : "Chose your plan",
+    "singleHours" : "Single hours",
+    "newRecruits" : "New recruits",
+    "1Month" : "1 month plan",
+    "singleHoursDescr" : "Open your eyes with a single hour coaching session.",
+    "newRecruitsDescr" : "1 hour discount for new recruits. Get a cheaper coaching",
+    "1MonthDescr" : "Get a daily followup on your progress with one of the juicy monthly plans"
 }

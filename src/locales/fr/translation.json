@@ -42,12 +42,20 @@
     "body13" : "-&gt; C'est ce qui m'a permis de monter au rang 512 en EUW.",
     "body14" : "Savoir de manière <b>consciente</b> comment créer des résultats qui peuvent être <b>répétés</b> pour la grande majorité des joueurs.",
     "title2" : "Il est un peu difficile d'apprendre à quelqu'un à faire quelque chose que vous n'avez pas fait vous-même.",
-    "body21" : "-&gt; C'est-à-dire, <b>briser complètement votre plafond de verre</b> (le soi-disant écart ADN).",
-    "body22" : "-&gt; Mais j'ai dû le faire pour atteindre <b>Grandmaster à 689 LP</b> après 5 ans de blocage en <b>bas Diamant</b>.",
+    "body21" : "-&gt; C'est-à-dire, <b>briser complètement votre plafond de verre</b> (le soi-disant DNA gap).",
+    "body22" : "-&gt; Mais j'ai dû le faire pour atteindre <b>Grandmaster à 689 LP</b> après 5 ans en étant stuck <b>Low Diamond</b>.",
     "title3" : "Si je coachais le moi d'il y a 4 ans, il l'aurait fait en environ 6 mois.",
-    "body31" : "Je suis <b>absolument certain</b> que vous ne trouverez <b>nulle part ailleurs</b> une méthodologie aussi <b>efficace</b> pour <b>s'améliorer et grimper</b>. Surtout que j'ai dû développer une <b>connaissance de niveau Challenger</b> pour compenser un cerveau qui est, pour le moins, facilement <b>distrait</b> lorsqu'il s'agit de jouer.",
+    "body31" : "Je suis <b>absolument certain</b> que vous ne trouverez <b>nulle part ailleurs</b> une méthodologie aussi <b>efficace</b> pour <b>s'améliorer et climb</b>. Surtout que j'ai dû développer une <b>connaissance de niveau Challenger</b> pour compenser un cerveau qui est, pour le moins, facilement <b>distrait</b> lorsqu'il s'agit de jouer.",
     "body32" : "J'ai créé une <b>académie</b> pour produire des <b>résultats incroyables</b> pour la plupart des joueurs, dans une <b>atmosphère saine</b> où tout le monde veut <b>s'améliorer</b>. Je connais la <b>racine du problème</b> et comment le <b>résoudre</b>, et les coachs débitant des <b>connaissances inefficaces me rendaient fou</b>.",
-    "body33" : "Je <b>forme</b> des joueurs qui seront mes <b>futurs coachs</b>, et ils perpétueront ma <b>philosophie</b> dans l'académie lorsque je serai occupé au <b>niveau professionnel</b>.",
+    "body33" : " Je <b>forme</b> des joueurs qui seront mes <b>futurs coachs</b>, et ils perpétueront ma <b>philosophie</b> dans l'académie lorsque je serai occupé au <b>niveau professionnel</b>.",
     "body34" : "<b>Ma méthodologie fonctionne très efficacement sur tous mes étudiants engagés, de tous les rôles, de tous les rangs, alors pourquoi pas vous ?</b>",
-    "body35" : "Si vous êtes prêt à remettre en question ce que vous pensez savoir et que vous avez faim de progresser, mon académie est faite pour vous. 🙂"
+    "body35" : "Si vous êtes prêt à remettre en question ce que vous pensez savoir et que vous avez faim de progresser, mon académie est faite pour vous. 🙂",
+
+    "chosePlan" : "Choisissez votre plan",
+    "singleHours" : "Heures par heures",
+    "newRecruits" : "Nouvelles recrues",
+    "1Month" : "Plan sur 1 mois",
+    "singleHoursDescr" : "Ouvrez les yeux avec 1 heure de coaching",
+    "newRecruitsDescr" : "Première heure moins chère pour les nouveaux arrivants",
+    "1MonthDescr" : "Suivis journalier de vos progrès avec un de nos plan sur 1 mois"
 }

@@ -57,6 +57,7 @@ function Story() {
 
                     <p className='contentStory'>
                     <a dangerouslySetInnerHTML={{__html : t('body34', {interpolation: {escapeValue: false}})}}></a>
+                    <br></br>
                     <a dangerouslySetInnerHTML={{__html : t('body35', {interpolation: {escapeValue: false}})}}></a>
                         <img src={quotes} className='quotes quoteEnd'></img>
                     </p>
