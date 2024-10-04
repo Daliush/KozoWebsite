@@ -54,8 +54,13 @@
     "chosePlan" : "Choisissez votre plan",
     "singleHours" : "Heures par heures",
     "newRecruits" : "Nouvelles recrues",
-    "1Month" : "Plan sur 1 mois",
+    "1MonthPlan" : "Plan sur 1 mois",
     "singleHoursDescr" : "Ouvrez les yeux avec 1 heure de coaching",
     "newRecruitsDescr" : "Première heure moins chère pour les nouveaux arrivants",
-    "1MonthDescr" : "Suivis journalier de vos progrès avec un de nos plan sur 1 mois"
+    "1MonthDescr" : "Suivis journalier de vos progrès avec un de nos plan sur 1 mois",
+    "1Hour" : "1 Heure",
+    "1Month" : "1 Mois",
+    "eurToEur" : "99 à 545 EUR",
+    "bookPlan" : "Choisir ce plan",
+    "upTo-30" : "Jusqu'à -30%"
 }

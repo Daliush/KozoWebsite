@@ -55,8 +55,13 @@
     "chosePlan" : "Chose your plan",
     "singleHours" : "Single hours",
     "newRecruits" : "New recruits",
-    "1Month" : "1 month plan",
+    "1MonthPlan" : "1 month plan",
     "singleHoursDescr" : "Open your eyes with a single hour coaching session.",
     "newRecruitsDescr" : "1 hour discount for new recruits. Get a cheaper coaching",
-    "1MonthDescr" : "Get a daily followup on your progress with one of the juicy monthly plans"
+    "1MonthDescr" : "Get a daily followup on your progress with one of the juicy monthly plans",
+    "1Hour" : "1 Hour",
+    "1Month" : "1 Month",
+    "eurToEur" : "99 to 545 EUR",
+    "bookPlan" : "Book your plan",
+    "upTo-30" : "Up to -30%"
 }

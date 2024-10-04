@@ -24,14 +24,14 @@ function Book() {
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
-                                <p>1 Hour</p>
+                                <p>{t('1Hour')}</p>
                             </div>
                         </div>
                         <hr />
                         <div className='link'>
                             <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
                                 <div className='bookButton'>
-                                    Book your plan
+                                {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
@@ -54,14 +54,14 @@ function Book() {
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
-                                <p>1 Hour</p>
+                                <p>{t('1Hour')}</p>
                             </div>
                         </div>
                         <hr />
                         <div className='link'>
                             <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
                                 <div className='bookButton'>
-                                    Book your plan
+                                {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
@@ -69,29 +69,29 @@ function Book() {
                 </div>
                 <div className="card">
                 <div class="banner">
-                        <p>Up to -30%</p>
+                        <p>{t('upTo-30')}</p>
                     </div>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                        <p className='h2Basic'>{t('1Month')}</p>
+                        <p className='h2Basic'>{t('1MonthPlan')}</p>
                         <p className='description'>
                         {t('1MonthDescr')}
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>99 to 545 EUR</p>
+                                <p>{t('eurToEur')}</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
-                                <p>1 Month</p>
+                                <p>{t('1Month')}</p>
                             </div>
                         </div>
                         <hr />
                         <div className='link'>
                             <a href="https://discord.gg/cdvtufDfQR" target='_blank'>
                                 <div className='bookButton'>
-                                    Book your plan
+                                {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
