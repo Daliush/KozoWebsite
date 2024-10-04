@@ -11,15 +11,19 @@ function Menu() {
     // Fonction pour changer la langue
     function changeLanguageFr() {
         i18n.changeLanguage("fr");
-        document.getElementById("fr").style.display = "none"
-        document.getElementById("en").style.display = "inline"
+        if (window.innerWidth >= 768) {
+            document.getElementById("fr").style.display = "none"
+            document.getElementById("en").style.display = "inline"
+        }
         document.getElementById("frPhone").style.display = "none"
         document.getElementById("enPhone").style.display = "inline"
     };
     function changeLanguageEn() {
         i18n.changeLanguage("en");
-        document.getElementById("en").style.display = "none"
-        document.getElementById("fr").style.display = "inline"
+        if (window.innerWidth >= 768) {
+            document.getElementById("en").style.display = "none"
+            document.getElementById("fr").style.display = "inline"
+        }
         document.getElementById("enPhone").style.display = "none"
         document.getElementById("frPhone").style.display = "inline"
     };
