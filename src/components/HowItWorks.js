@@ -1,31 +1,34 @@
 import './css/HowItWorks.css';
 import './css/Home.css';
+import { useTranslation } from 'react-i18next';
 function HowItWorks() {
+    const { t, i18n } = useTranslation();
+
     return (
         <div className="HowItWorks">
             <h2 className="hidden">
-                How it works
+            {t('howItWorks')} 
             </h2>
             <div className="Steps">
                 <div className="StepsItem Book hiddenRight">
-                    <h3 className="StepTitle">Book</h3>
-                    <p>Schedule your personal coaching session with me now</p>
+                    <h3 className="StepTitle">{t('bookBody')} </h3>
+                    <p>{t('book1')} </p>
                 </div>
 
                 <div className="StepsItem Learn hiddenRight">
-                <h3 className="StepTitle">Learn</h3>
-                <p>Show up to the coaching session</p>
-                <p>Learn a very different and more effective approach to the game</p>
-                <p>We will shift your belief system and process in order to program your mind for exponential results</p>
-                <p>You will know way better what to pay attention to ingame and have a specific learning objective that you will <a className="underline">know</a> to be key to your climbing</p>
+                <h3 className="StepTitle">{t('learn')} </h3>
+                <p>{t('learn1')} </p>
+                <p>{t('learn2')}</p>
+                <p>{t('learn3')}</p>
+                <p dangerouslySetInnerHTML={{__html : t('learn4', {interpolation: {escapeValue: false}})}}></p>
 
                 </div>
 
                 <div className="StepsItem Result hiddenRight">
-                <h3 className="StepTitle">Obtain Results</h3>
-                <p>Apply the process I've given you with intent</p>
-                <p>See that you pay more attention to specific patterns and begin to improve on specific areas of  your gameplay. </p>
-                <p>Eventually when 2 things connect, you break through and get massive results, only to struggle again at a higher rank</p>
+                <h3 className="StepTitle">{t('obtainResults')}</h3>
+                <p>{t('obtainResults1')}</p>
+                <p>{t('obtainResults2')} </p>
+                <p>{t('obtainResults3')}</p>
                 </div>
             </div>
 
