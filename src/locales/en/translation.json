@@ -4,7 +4,7 @@
     "aboutMe" : "About Me",
     "book" : "Book",
     "bookNow" : "Book Now",
-    "whyAmI" : "Why am i the coach you need ?",
+    "whyAmI" : "In wich cases am I the coach you need ?",
     "quitCollege" : "I quit college to go pro even though I was hardstuck D4 for 5 years and diagnosed with Attention Deficit Disorder",
     "vision" : "Simply because I had a vision, I knew I would do whatever it takes.",
     "coachWishIMet" : "I'm the coach I wish I met 4 years ago, because I know my younger self would've made it in 6 months from D4 to High GM if I had been coaching him.",
@@ -16,15 +16,19 @@
     "learn" : "Learn",
     "obtainResults" : "Obtain Results",
     
-    "book1" : "Schedule your personal coaching session with me now",
-    "learn1" : "Show up to the coaching session",
-    "learn2" : "Learn a very different and more effective approach to the game",
-    "learn3" : "We will shift your belief system and process in order to program your mind for exponential results",
-    "learn4" : "You will know way better what to pay attention to ingame and have a specific learning objective that you will <a class=\"underline\">know</a> to be key to your climbing",
-    "obtainResults1" : "Apply the process I've given you with intent",
-    "obtainResults2" : "See that you pay more attention to specific patterns and begin to improve on specific areas of  your gameplay.",
-    "obtainResults3" : "Eventually when 2 things connect, you break through and get massive results, only to struggle again at a higher rank",
-    "someFeedbacks" : "Some of the feedbacks over the last few months",
+    
+    "book1": "Learn about Kozo Mastery - my Coaching",
+    "book1Link": "right here",
+    "learn1": "Create a ticket on Discord (la-maitrise-kozo channel), and the staff will guide you, especially if you have further questions about how the Coaching sessions work or to finalize the booking of our session.",
+    "learn2": "Learn a very different and more effective approach to the game.",
+    "learn3": "We’ll change your mindset and process so you can progress faster, even on your own.",
+    "learn4": "You will know much better what to do and have a learning goal that will <a class=\"underline\">boost</a> your progression after each session.",
+    "obtainResults1": "During the Coaching hour, don’t hesitate to ask me to clarify, as clarity of understanding is essential.",
+    "obtainResults2": "You will have a much clearer idea of how to climb divisions and the keys to doing so more (easily) effectively than ever!",
+    "obtainResults3": "When your progression translates into better in-game impact, you break through and achieve results never seen before.",
+    "someFeedbacks": "Some feedback over the last few months",
+    
+    
 
     "academyTitle" : "The Academy will be available soon",
     "bad1" : "Are you done with having teammates that play like garbage and thinking to yourself, how can I have the same rank as those people?",
@@ -64,7 +68,7 @@
     "body33": "&#x2022; &nbsp; We’ll also dive deep into your <b>psychology</b>, understand the <b>beliefs that limit you</b>, and <b>change them</b>.",
     "body34": "&#x2022; &nbsp; I will <b>teach you how to improve</b> and provide you with the <b>best methodology</b> I’ve developed so your progress is <b>exponential.</b>",
     "body35": "<b>I can’t wait to help you step up.</b>",
-    "underLobby": "I could never have imagined playing so many games in High Challenger, let alone with the rank 1 on the ladder.",
+    "underLobby": "I could never have imagined playing so many games in Challenger, let alone with the rank 1 on the ladder.",
 
     "chosePlan" : "Chose your plan",
     "singleHours" : "Single hours",

@@ -187,7 +187,10 @@
 .sidebarLink {
   border-bottom:  #ffffff 2px solid ;
 }
-
+.linkBook {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .sideBarItem {
   margin: 30px 20px;
   cursor: pointer;

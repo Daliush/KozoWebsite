@@ -22,11 +22,12 @@ function WhoAmI() {
                         <img className='imageWhoAmI' src={KozoIRL}></img>
                     </div>
                     <div className='ImageTextItem textContainer'>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('quitCollege')} </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('vision')}  </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('coachWishIMet')} </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('reachHighGM')} </p>
-                        <p className='hiddenRight textWhoAmI'>&gt; {t('takeThingsToTheNextLevel')} </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI1', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI2', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI3', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI4', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI5', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI6', { interpolation: { escapeValue: false } }) }}></a> </p>
                     </div>
                 </div>
                 <p className='learnMore' onClick={aboutMeClick}><u>&#8599; {t('learnMore')}</u></p>
