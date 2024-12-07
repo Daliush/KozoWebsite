@@ -5,27 +5,29 @@
     "book" : "Book",
     "bookNow" : "Book Now",
     "whyAmI" : "In wich cases am I the coach you need ?",
-    "quitCollege" : "I quit college to go pro even though I was hardstuck D4 for 5 years and diagnosed with Attention Deficit Disorder",
-    "vision" : "Simply because I had a vision, I knew I would do whatever it takes.",
-    "coachWishIMet" : "I'm the coach I wish I met 4 years ago, because I know my younger self would've made it in 6 months from D4 to High GM if I had been coaching him.",
-    "reachHighGM" : "No wonder I had to find anything and everything I could find to improve to reach High GM",
-    "takeThingsToTheNextLevel" : "Take things to the next level through the most effective process I could find to 10x your \"genetic ceiling\"",
+    
+    "whyAmI1": "&gt; &nbsp; If the outcome of <b>games</b> often feels <b>out of your control</b>",
+    "whyAmI2": "&gt; &nbsp; If you make <b>efforts</b> but don’t see results",
+    "whyAmI3": "&gt; &nbsp; If you think <b>something</b> is wrong with your <b>gameplay</b> but it’s hard to <b>pinpoint exactly what</b> or <b>how to change it</b> effectively",
+    "whyAmI4": "&gt; &nbsp; If the <b>emotional rollercoaster</b> of soloQ is starting to weigh on you and you’re tired of relying on <b>luck</b>",
+    "whyAmI5": "&gt; &nbsp; If you’re reluctant to <b>play 1000 hours</b> and spend a year to <b>gain 4 or 5 divisions</b> like most players, and you’d rather <b>achieve that in a few weeks</b> with a few hours of Coaching like <b>most of my clients</b>",
+    "whyAmI6": "&gt; &nbsp; If you have <b>real ambitions</b>, I’m ready to <b>reveal my secrets</b>",
+    "whyAmI7": "&gt; &nbsp; The <b>methodology</b> you’ll find here enabled a <b>hardstuck D4 player for 5 years</b> with <b>goldfish-level attention span</b> like me to climb to <b>GM 689LP at rank 512.</b>",
+    "whyAmI8": "&gt; &nbsp; <b>9 out of 10 master 0lp players</b> have <b>far superior natural talent</b> in this game compared to me, yet 99.9% of them <b>will never reach GM.</b>",
+    "whyAmI9": "But they don’t have the right <b>process</b> and <b>guidance</b> that I offer here.",
+    
+    
     "learnMore" : "Learn more about me",
     "howItWorks" : "How it works",
     "bookBody" : "Book",
     "learn" : "Learn",
     "obtainResults" : "Obtain Results",
-    
-    
-    "book1": "Learn about Kozo Mastery - my Coaching",
+    "book1": "Learn about <b>Kozo Mastery</b> - my Coaching",
     "book1Link": "right here",
-    "learn1": "Create a ticket on Discord (la-maitrise-kozo channel), and the staff will guide you, especially if you have further questions about how the Coaching sessions work or to finalize the booking of our session.",
-    "learn2": "Learn a very different and more effective approach to the game.",
-    "learn3": "We’ll change your mindset and process so you can progress faster, even on your own.",
-    "learn4": "You will know much better what to do and have a learning goal that will <a class=\"underline\">boost</a> your progression after each session.",
-    "obtainResults1": "During the Coaching hour, don’t hesitate to ask me to clarify, as clarity of understanding is essential.",
-    "obtainResults2": "You will have a much clearer idea of how to climb divisions and the keys to doing so more (easily) effectively than ever!",
-    "obtainResults3": "When your progression translates into better in-game impact, you break through and achieve results never seen before.",
+    "learn1": "<b>Create a ticket</b> on <b>Discord</b> (Kozo Mastery channel), and <b>the staff will guide you</b>, especially if you have further <b>questions</b> about the <b>coaching process</b> or to <b>finalize the booking</b> of our session.",
+    "obtainResults1": "<b>During the Coaching hour</b>, don’t hesitate to <b>ask me to clarify</b>, as <b>clarity of understanding is essential</b>.",
+    "obtainResults2": "You will have a <b>much clearer idea</b> of how to <b>climb divisions</b> and <b>the keys to achieving it</b> more (easily) <b>effectively</b> than ever!",
+
     "someFeedbacks": "Some feedback over the last few months",
     
     

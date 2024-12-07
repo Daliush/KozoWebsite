@@ -28,9 +28,12 @@ function WhoAmI() {
                         <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI4', { interpolation: { escapeValue: false } }) }}></a> </p>
                         <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI5', { interpolation: { escapeValue: false } }) }}></a> </p>
                         <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI6', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI7', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <br></br>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI8', { interpolation: { escapeValue: false } }) }}></a> </p>
+                        <p className="hiddenRight textWhoAmI"><a dangerouslySetInnerHTML={{ __html: t('whyAmI9', { interpolation: { escapeValue: false } }) }}></a> </p>
                     </div>
                 </div>
-                <p className='learnMore' onClick={aboutMeClick}><u>&#8599; {t('learnMore')}</u></p>
             </div>
 
         </div>

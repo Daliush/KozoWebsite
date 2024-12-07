@@ -17,19 +17,19 @@ function HowItWorks() {
                 <div className="StepsItem Book hiddenRight">
                     <h3 className="StepTitle">{t('bookBody')} </h3>
                     <p>
-                        <a>{t('book1')}</a> <a className='linkBook' onClick={bookNowClick}>{t('book1Link')}</a>
+                        <a dangerouslySetInnerHTML={{ __html: t('book1', { interpolation: { escapeValue: false } }) }}></a>  <a className='linkBook' onClick={bookNowClick}>{t('book1Link')}</a>
                     </p>
                 </div>
 
                 <div className="StepsItem Learn hiddenRight">
                 <h3 className="StepTitle">{t('learn')} </h3>
-                <p>{t('learn1')} </p>
+                <p dangerouslySetInnerHTML={{ __html: t('learn1', { interpolation: { escapeValue: false } }) }}></p>
                 </div>
 
                 <div className="StepsItem Result hiddenRight">
                 <h3 className="StepTitle">{t('obtainResults')}</h3>
-                <p>{t('obtainResults1')}</p>
-                <p>{t('obtainResults2')}</p>
+                <p dangerouslySetInnerHTML={{ __html: t('obtainResults1', { interpolation: { escapeValue: false } }) }}></p>
+                <p dangerouslySetInnerHTML={{ __html: t('obtainResults2', { interpolation: { escapeValue: false } }) }}></p>
                 </div>
             </div>
 
