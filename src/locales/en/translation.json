@@ -81,7 +81,13 @@
     "1MonthDescr" : "Get a daily followup on your progress with one of the juicy monthly plans",
     "1Hour" : "1 Hour",
     "1Month" : "1 Month",
-    "eurToEur" : "99 to 545 EUR",
+    "eurToEur" : "94 to 595 EUR",
     "bookPlan" : "Book your plan",
-    "upTo-30" : "Up to -30%"
+    "upTo-30" : "Up to -30%",
+
+    "viewPlans" : "View plans",
+
+    "plan4H" : "4 Hour plan",
+    "plan8H" : "8 Hour plan",
+    "plan30H" : "30 Hour plan"
 }

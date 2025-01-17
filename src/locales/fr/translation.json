@@ -76,7 +76,13 @@
     "1MonthDescr" : "Suivis journalier de vos progrès avec un de nos plan sur 1 mois",
     "1Hour" : "1 Heure",
     "1Month" : "1 Mois",
-    "eurToEur" : "99 à 545 EUR",
+    "eurToEur" : "94 à 595 EUR",
     "bookPlan" : "Choisir ce plan",
-    "upTo-30" : "Jusqu'à -30%"
+    "upTo-30" : "Jusqu'à -30%",
+
+    "viewPlans" : " Voir les plans",
+
+    "plan4H" : "Plan sur 4 Heures",
+    "plan8H" : "Plan sur 8 Heures",
+    "plan30H" : "Plan sur 30 Heures"
 }

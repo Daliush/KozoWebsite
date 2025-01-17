@@ -2,9 +2,23 @@ import './css/Book.css';
 import './css/Home.css';
 import myImage from '../images/galaxy-slayer-zed-splash.jpg';
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ModalPlans from './ModalPlans';
 function Book() {
     const { t } = useTranslation();
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    // Fonction pour ouvrir le modal
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    // Fonction pour fermer le modal
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+
     // Déclaration de l'objet Calendly pour TypeScript
   useEffect(() => {
     // Optionnel : Charger le script dynamiquement si vous ne l'avez pas ajouté dans index.html
@@ -63,36 +77,6 @@ function Book() {
                     </div>
                 </div>
                 <div className="card">
-                    <div class="banner">
-                        <p>{t('newRecruits')}</p>
-                    </div>
-                    <div className='main'>
-                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                        <p className='h2Basic'>{t('newRecruits')}</p>
-                        <p className='description'>
-                        {t('newRecruitsDescr')}
-                        </p>
-                        <div className='bookingInfo'>
-                            <div className="price">
-                                <ins>€</ins>
-                                <p>20 EUR</p>
-                            </div>
-                            <div className="duration">
-                                <ins>◷</ins>
-                                <p>{t('1Hour')}</p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div className='link'>
-                            <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
-                                <div className='bookButton'>
-                                {t('bookPlan')}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
                 <div class="banner">
                         <p>{t('upTo-30')}</p>
                     </div>
@@ -114,14 +98,16 @@ function Book() {
                         </div>
                         <hr />
                         <div className='link'>
-                            <a href="https://discord.gg/cdvtufDfQR" target='_blank'>
+                            <a onClick={openModal}>
                                 <div className='bookButton'>
-                                {t('bookPlan')}
+                                {t('viewPlans')}
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
+                      {/* Composant ModalPlans */}
+      {isModalOpen && <ModalPlans closeModal={closeModal} />}
             </div>
 
         </div>
