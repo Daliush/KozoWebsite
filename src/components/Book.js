@@ -2,8 +2,33 @@ import './css/Book.css';
 import './css/Home.css';
 import myImage from '../images/galaxy-slayer-zed-splash.jpg';
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 function Book() {
     const { t } = useTranslation();
+    // Déclaration de l'objet Calendly pour TypeScript
+  useEffect(() => {
+    // Optionnel : Charger le script dynamiquement si vous ne l'avez pas ajouté dans index.html
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const openCalendlyPopup1H = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/kozostraininglegends/30min',
+      });
+    } else {
+      console.error("Calendly script not loaded");
+    }
+  };
+
+
     return (
         <div className="BookBody" id='bookNow'>
             <h2>
@@ -29,7 +54,7 @@ function Book() {
                         </div>
                         <hr />
                         <div className='link'>
-                            <a href="https://discord.gg/gRtXBZCwjA" target='_blank'>
+                            <a onClick={openCalendlyPopup1H}>
                                 <div className='bookButton'>
                                 {t('bookPlan')}
                                 </div>
