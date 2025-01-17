@@ -82,7 +82,7 @@
 
     "viewPlans" : " Voir les plans",
 
-    "plan4H" : "Plan sur 4 Heures",
-    "plan8H" : "Plan sur 8 Heures",
-    "plan30H" : "Plan sur 30 Heures"
+    "plan4H" : "Plan 4 Heures",
+    "plan8H" : "Plan 8 (+2) Heures",
+    "plan30H" : "Plan 30 (+5) Heures"
 }
