@@ -116,7 +116,7 @@ function Book() {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>9.99 EUR</p>
+                                <p>9.99 EUR HT</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
