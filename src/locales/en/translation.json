@@ -89,5 +89,8 @@
 
     "plan4H" : "4 Hour plan",
     "plan8H" : "8 (+2) Hour plan",
-    "plan30H" : "30 (+5) Hour plan"
+    "plan30H" : "30 (+5) Hour plan",
+    "patreon" : "Patreon",
+    "patreonDescr" : "More than 100 hours of the best Coachings and Ultimate Guides",
+    "patreonButton" : "Patreon link"
 }

@@ -106,10 +106,37 @@ function Book() {
                         </div>
                     </div>
                 </div>
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>{t('patreon')}</p>
+                        <p className='description'>
+                            {t('patreonDescr')}
+                        </p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>9.99 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>{t('1Month')}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className='link'>
+                            <a href='https://www.patreon.com/c/Kozo77' target='_blank'>
+                                <div className='bookButton'>
+                                {t('patreonButton')}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                       {/* Composant ModalPlans */}
       {isModalOpen && <ModalPlans closeModal={closeModal} />}
             </div>
-
+            
         </div>
     );
 }
