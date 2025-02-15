@@ -60,6 +60,27 @@ import Nelwyr1 from '../images/Nelwyr_1.png'
 import Nelwyr2 from '../images/Nelwyr_2.png'
 import Nelwyr3 from '../images/Nelwyr_3.png'
 import Nelwyr4 from '../images/Nelwyr_4.png'
+import MaleloThumbnail from '../images/Malelo_Thumbnail.png'
+import Malelo1 from '../images/Malelo_1.png'
+import Malelo2 from '../images/Malelo_2.png'
+import Malelo3 from '../images/Malelo_3.png'
+import Malelo4 from '../images/Malelo_4.png'
+import Malelo5 from '../images/Malelo_5.png'
+import Malelo6 from '../images/Malelo_6.png'
+import Malelo7 from '../images/Malelo_7.png'
+import CerttesThumbnail from '../images/Certtes_Thumbnail.png'
+import Certtes1 from '../images/Certtes_1.png'
+import Certtes2 from '../images/Certtes_2.png'
+import Certtes3 from '../images/Certtes_3.png'
+import Certtes4 from '../images/Certtes_4.png'
+import Certtes5 from '../images/Certtes_5.png'
+import HighqueueThumbnail from '../images/HighQueue_Thumbnail.png'
+import Highqueue1 from '../images/Highqueue_1.png'
+import Highqueue2 from '../images/Highqueue_2.png'
+import MugenThumbnail from '../images/Mugen_Thumbnail.png'
+import Mugen1 from '../images/Mugen_1.png'
+import Mugen2 from '../images/Mugen_2.png'
+import Mugen3 from '../images/Mugen_3.png'
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 function Testimonials() {
@@ -130,7 +151,7 @@ function Testimonials() {
             testimonialContainer.scrollLeft -= containerWidth
         })
     }, []);
-    // CURRENT TESTIMONIAL ID = 10
+    // CURRENT TESTIMONIAL ID = 14
     return (
         <div className="Testimonials" id='Testimonials'>
             <h2 className="hidden">
@@ -165,6 +186,17 @@ function Testimonials() {
                         </div>
                     </div>
 
+                    <div className="cardTestimonial" id='cardTestimonial11'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Malelo</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={MaleloThumbnail} alt="MaleloThumb" />
+                        </div>
+                    </div>
+
                     <div className="cardTestimonial" id='cardTestimonial10'>
                         <div className='mainTestimonial'>
                             <div className='nameContainer'>
@@ -175,6 +207,41 @@ function Testimonials() {
                             <img className='imageTestimonial' src={NelwyrThumbnail} alt="NelwyrThumb" />
                         </div>
                     </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial12'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Certtes</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={CerttesThumbnail} alt="CerttesThumb" />
+                        </div>
+                    </div>
+
+
+                    <div className="cardTestimonial" id='cardTestimonial13'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>HighQueue</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={HighqueueThumbnail} alt="HighQueueThumb" />
+                        </div>
+                    </div>
+
+                    <div className="cardTestimonial" id='cardTestimonial14'>
+                        <div className='mainTestimonial'>
+                            <div className='nameContainer'>
+                                <a>Mugen</a>
+                                <img src={frenchFlag} alt="frenchFlag" className='flag' />
+                            </div>
+                            <hr />
+                            <img className='imageTestimonial' src={MugenThumbnail} alt="MugenThumb" />
+                        </div>
+                    </div>
+
 
 
                     <div className="cardTestimonial" id='cardTestimonial1'>
@@ -444,6 +511,77 @@ function Testimonials() {
                         <img src={Nelwyr2} alt='Nelwyr2' className="carousel-image" />
                         <img src={Nelwyr3} alt='Nelwyr3' className="carousel-image" />
                         <img src={Nelwyr4} alt='Nelwyr4' className="carousel-image" />
+
+                    </div>
+
+                </div>
+            </dialog>
+
+            <dialog className='modal' id='modal11'>
+                <button className="carousel-button left" id='left12'>&#10094;</button>
+                <button className="carousel-button right" id='right12'>&#10095;</button>
+                <div className="carousel-container">
+
+                    <div className="carousel-images" id='carousel-images11'>
+                        <img src={Malelo1} alt='Malelo1' className="carousel-image active" />
+                        <img src={Malelo2} alt='Malelo2' className="carousel-image" />
+                        <img src={Malelo3} alt='Malelo3' className="carousel-image" />
+                        <img src={Malelo4} alt='Malelo4' className="carousel-image" />
+                        <img src={Malelo5} alt='Malelo5' className="carousel-image" />
+                        <img src={Malelo6} alt='Malelo6' className="carousel-image" />
+                        <img src={Malelo7} alt='Malelo7' className="carousel-image" />
+
+                    </div>
+
+                </div>
+            </dialog>
+
+
+            <dialog className='modal' id='modal12'>
+                <button className="carousel-button left" id='left13'>&#10094;</button>
+                <button className="carousel-button right" id='right13'>&#10095;</button>
+                <div className="carousel-container">
+
+                    <div className="carousel-images" id='carousel-images12'>
+                        <img src={Certtes1} alt='Certtes1' className="carousel-image active" />
+                        <img src={Certtes2} alt='Certtes2' className="carousel-image" />
+                        <img src={Certtes3} alt='Certtes3' className="carousel-image" />
+                        <img src={Certtes4} alt='Certtes4' className="carousel-image" />
+                        <img src={Certtes5} alt='Certtes5' className="carousel-image" />
+
+
+                    </div>
+
+                </div>
+            </dialog>
+
+
+            <dialog className='modal' id='modal13'>
+                <button className="carousel-button left" id='left14'>&#10094;</button>
+                <button className="carousel-button right" id='right14'>&#10095;</button>
+                <div className="carousel-container">
+
+                    <div className="carousel-images" id='carousel-images13'>
+                        <img src={Highqueue1} alt='HighQueue1' className="carousel-image active" />
+                        <img src={Highqueue2} alt='HighQueue2' className="carousel-image" />
+
+
+                    </div>
+
+                </div>
+            </dialog>
+
+            
+            <dialog className='modal' id='modal14'>
+                <button className="carousel-button left" id='left15'>&#10094;</button>
+                <button className="carousel-button right" id='right15'>&#10095;</button>
+                <div className="carousel-container">
+
+                    <div className="carousel-images" id='carousel-images14'>
+                        <img src={Mugen1} alt='Mugen1' className="carousel-image active" />
+                        <img src={Mugen2} alt='Mugen2' className="carousel-image" />
+                        <img src={Mugen3} alt='Mugen3' className="carousel-image" />
+
 
                     </div>
 
