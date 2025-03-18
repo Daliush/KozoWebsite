@@ -42,6 +42,36 @@ function Book() {
     }
   };
 
+  const openCalendlyPopup4H = () => {
+    if (window.Calendly) {
+        window.Calendly.initPopupWidget({
+            url: 'https://calendly.com/kozostraininglegends/plan-de-5-heures',
+        });
+    } else {
+        console.error("Calendly script not loaded");
+    }
+};
+
+const openCalendlyPopup8H = () => {
+    if (window.Calendly) {
+        window.Calendly.initPopupWidget({
+            url: 'https://calendly.com/kozostraininglegends/plan-au-mois-greater-impact-8h-2h',
+        });
+    } else {
+        console.error("Calendly script not loaded");
+    }
+};
+
+const openCalendlyPopup30H = () => {
+    if (window.Calendly) {
+        window.Calendly.initPopupWidget({
+            url: 'https://calendly.com/kozostraininglegends/plan-au-mois-taking-over-30-5h',
+        });
+    } else {
+        console.error("Calendly script not loaded");
+    }
+};
+
 
     return (
         <div className="BookBody" id='bookNow'>
@@ -77,30 +107,82 @@ function Book() {
                     </div>
                 </div>
                 <div className="card">
-                <div class="banner">
-                        <p>{t('upTo-30')}</p>
-                    </div>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                        <p className='h2Basic'>{t('1MonthPlan')}</p>
+                        <p className='h2Basic'>{t('5hours')}</p>
                         <p className='description'>
-                        {t('1MonthDescr')}
+                        {t('5hoursDescr')}
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>{t('eurToEur')}</p>
+                                <p>165 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
-                                <p>{t('1Month')}</p>
+                                <p>{"5 " + t('hours')}</p>
                             </div>
                         </div>
                         <hr />
                         <div className='link'>
-                            <a onClick={openModal}>
+                            <a onClick={openCalendlyPopup4H}>
                                 <div className='bookButton'>
-                                {t('viewPlans')}
+                                {t('bookPlan')}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>{t('10hours')}</p>
+                        <p className='description'>
+                        {t('10hoursDescr')}
+                        </p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>300 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>{"10 " + t('hours')}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className='link'>
+                            <a onClick={openCalendlyPopup8H}>
+                                <div className='bookButton'>
+                                {t('bookPlan')}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>{t('20hours')}</p>
+                        <p className='description'>
+                        {t('20hoursDescr')}
+                        </p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>550 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>{"20 " + t('hours')}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className='link'>
+                            <a onClick={openCalendlyPopup30H}>
+                                <div className='bookButton'>
+                                {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
@@ -116,7 +198,7 @@ function Book() {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>9.99 EUR HT</p>
+                                <p>19.99 EUR HT</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
