@@ -138,8 +138,8 @@ const openCalendlyPopup30H = () => {
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('10hours')}</p>
-                        <p className='description'>
-                        {t('10hoursDescr')}
+                        <p className='description' 
+                        dangerouslySetInnerHTML={{ __html: t('10hoursDescr', { interpolation: { escapeValue: false } }) }}>
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">

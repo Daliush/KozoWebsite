@@ -75,7 +75,7 @@
     "10hours" : "Plan 10H",
     "10hoursDescr" : "De quoi perfectionner tes fondamentaux.",
     "20hours" : "Plan 20H",
-    "20hoursDescr" : "De quoi t'envoler vers de nouveaux horizons .",
+    "20hoursDescr" : "De quoi t'envoler vers de nouveaux horizons.",
     "newRecruits" : "Nouvelles recrues",
     "1MonthPlan" : "Plan sur 1 mois",
     "singleHoursDescr" : "De quoi te remettre sur le bon chemin.",
@@ -93,6 +93,6 @@
     "plan8H" : "Plan 8 (+2) Heures",
     "plan30H" : "Plan 30 (+5) Heures",
     "patreon" : "Patreon",
-    "patreonDescr": "200+ Heures de Coachings et Guides Ultimes de tous roles / Tous rangs",
+    "patreonDescr": "200+ Heures de Coachings et Guides Ultimes de tous roles / Tous rangs.",
     "patreonButton": "Accéder au Patreon"
 }
