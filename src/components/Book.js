@@ -89,7 +89,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>35 EUR</p>
+                                <p>40 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -116,7 +116,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>165 EUR</p>
+                                <p>160 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -144,7 +144,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>300 EUR</p>
+                                <p>400 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -171,7 +171,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>550 EUR</p>
+                                <p>600 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
