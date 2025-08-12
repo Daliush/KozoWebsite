@@ -11,12 +11,20 @@ function AboutMe() {
     useEffect(() => {
     // Scroll to the element with ID that matches the hash in the URL
     if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      const y = element.getBoundingClientRect().top + window.scrollY - 100;
-      if (element) {
-        //element.scrollIntoView({ behavior: 'smooth'});
-        window.scrollTo({top: y, behavior: 'smooth'});
-      }
+      // Add a small delay to ensure the page is fully rendered
+      const timer = setTimeout(() => {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          // Use scrollIntoView with proper options for better centering
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
+      
+      return () => clearTimeout(timer);
     }
 
         const observer = new IntersectionObserver((entries) => {
