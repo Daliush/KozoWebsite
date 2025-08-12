@@ -137,33 +137,6 @@ const openCalendlyPopup30H = () => {
                 <div className="card">
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
-                        <p className='h2Basic'>{t('10hours')}</p>
-                        <p className='description' 
-                        dangerouslySetInnerHTML={{ __html: t('10hoursDescr', { interpolation: { escapeValue: false } }) }}>
-                        </p>
-                        <div className='bookingInfo'>
-                            <div className="price">
-                                <ins>€</ins>
-                                <p>400 EUR</p>
-                            </div>
-                            <div className="duration">
-                                <ins>◷</ins>
-                                <p>{"10 " + t('hours')}</p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div className='link'>
-                            <a onClick={openCalendlyPopup8H}>
-                                <div className='bookButton'>
-                                {t('bookPlan')}
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className='main'>
-                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('20hours')}</p>
                         <p className='description'>
                         {t('20hoursDescr')}
