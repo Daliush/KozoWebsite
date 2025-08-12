@@ -2,6 +2,23 @@
   font-family: 'Moderniz';
   src: url('/public/assets/Moderniz.otf');
 }
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  z-index: 1;
+  pointer-events: none;
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.blur-overlay.blur-active {
+  backdrop-filter: blur(5px);
+}
 .App {
   background-image: url('/public/images/yasuo_background.jpg');
   background-position-x: center;
@@ -9,6 +26,7 @@
   background-size: cover;
   background-color: black;
   overflow: hidden;
+  position: relative;
 }
 .App-body {
   display: flex;
@@ -16,6 +34,8 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  z-index: 2;
 }
 .hidden {
   opacity: 0;

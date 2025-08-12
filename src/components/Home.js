@@ -33,22 +33,46 @@ function Home() {
     const hiddenElemsRight = document.querySelectorAll(".hiddenRight");
     hiddenElemsRight.forEach((el) => observer2.observe(el));
 
+    // Scroll to the element with ID that matches the hash in the URL
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        // Calculate position with menu height offset
+        const elementTop = element.getBoundingClientRect().top + window.scrollY;
+        const menuHeight = 100; // Account for menu height
+        const offsetPosition = elementTop - menuHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, offsetPosition), // Don't scroll above page top
+          behavior: 'smooth'
+        });
+      }
+    }
 
-        // Scroll to the element with ID that matches the hash in the URL
-        if (location.hash) {
-          const element = document.getElementById(location.hash.substring(1));
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth',  block: "center"});
-          }
-        }
+    // Add scroll listener for blur effect
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const blurOverlay = document.getElementById('blur-overlay');
+      
+      if (scrollY > 50) {
+        blurOverlay.classList.add('blur-active');
+      } else {
+        blurOverlay.classList.remove('blur-active');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
     
-
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
 
   }, [location]);
 
 
   return (
     <div className="App">
+      <div id="blur-overlay" className="blur-overlay"></div>
       <div className="App-body">
         <section id='welcome'>
           <div><Welcome /></div>
