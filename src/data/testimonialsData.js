@@ -79,6 +79,19 @@ import MugenThumbnail from '../images/Mugen_Thumbnail.png'
 import Mugen1 from '../images/Mugen_1.png'
 import Mugen2 from '../images/Mugen_2.png'
 import Mugen3 from '../images/Mugen_3.png'
+import KkhumaThumbnail from '../images/Kkhuma_Thumbnail.png'
+import KKhuma1 from '../images/Kkhuma_1.png'
+import KKhuma2 from '../images/Kkhuma_2.png'
+import KKhuma3 from '../images/Kkhuma_3.png'
+import KKhuma4 from '../images/Kkhuma_4.png'
+import KKhuma5 from '../images/Kkhuma_5.png'
+import DeadcrafteurThumbnail from '../images/Deadcrafteur_Thumbnail.png'
+import Deadcrafteur1 from '../images/Deadcrafteur_1.png'
+import Deadcrafteur2 from '../images/Deadcrafteur_2.png'
+import Deadcrafteur3 from '../images/Deadcrafteur_3.png'
+import Deadcrafteur4 from '../images/Deadcrafteur_4.png'
+import Deadcrafteur5 from '../images/Deadcrafteur_5.png'
+import Deadcrafteur6 from '../images/Deadcrafteur_6.png'
 
 export const testimonialsData = [
     {
@@ -95,6 +108,19 @@ export const testimonialsData = [
             { src: Nexo6, alt: 'nexo6' },
             { src: Nexo7, alt: 'nexo7' },
             { src: Nexo8, alt: 'nexo8' }
+        ]
+    },
+        {
+        name: 'Kkhuma',
+        flag: frenchFlag,
+        flagAlt: 'french',
+        thumbnail: KkhumaThumbnail,
+        images: [
+            { src: KKhuma1, alt: 'Kkhuma1' },
+            { src: KKhuma2, alt: 'Kkhuma2' },
+            { src: KKhuma3, alt: 'Kkhuma3' },
+            { src: KKhuma4, alt: 'Kkhuma4' },
+            { src: KKhuma5, alt: 'Kkhuma5' },
         ]
     },
     {
@@ -215,6 +241,20 @@ export const testimonialsData = [
         images: [
             { src: light1, alt: 'light1' },
             { src: light2, alt: 'light2' }
+        ]
+    },
+        {
+        name: 'Deadcrafteur',
+        flag: frenchFlag,
+        flagAlt: 'french',
+        thumbnail: DeadcrafteurThumbnail,
+        images: [
+            { src: Deadcrafteur1, alt: 'Deadcrafteur1' },
+            { src: Deadcrafteur2, alt: 'Deadcrafteur2' },
+            { src: Deadcrafteur3, alt: 'Deadcrafteur3' },
+            { src: Deadcrafteur4, alt: 'Deadcrafteur4' },
+            { src: Deadcrafteur5, alt: 'Deadcrafteur5' },
+            { src: Deadcrafteur6, alt: 'Deadcrafteur6' }
         ]
     },
     {
