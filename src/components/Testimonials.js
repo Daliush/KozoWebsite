@@ -154,7 +154,7 @@ function Testimonials() {
     // CURRENT TESTIMONIAL ID = 14
     return (
         <div className="Testimonials" id='Testimonials'>
-            <h2 className="hidden">
+            <h2 className="hidden section-title">
                 {t('someFeedbacks')}
             </h2>
             <div className='sliderContainer'>

@@ -10,7 +10,7 @@ function HowItWorks() {
     }
     return (
         <div className="HowItWorks">
-            <h2 className="hidden">
+            <h2 className="hidden section-title">
             {t('howItWorks')} 
             </h2>
             <div className="Steps">
