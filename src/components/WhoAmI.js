@@ -1,6 +1,6 @@
 import './css/WhoAmI.css';
 import './css/Home.css';
-import KozoIRL from '../images/KozoIRL.png';
+import KozoIRL from '../images/KozoStanding.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 function WhoAmI() {
@@ -14,27 +14,69 @@ function WhoAmI() {
     }
     return (
         <div className="WhoAmIText">
-
-            <h2 className="hidden">{t('whyAmI')}</h2>
+            <h2 className="hidden section-title">{t('whyAmI')}</h2>
             <div className='WhyAmIContainer'>
                 <div className='ImageText hidden'>
                     <div className='ImageTextItem imageContainer'>
-                        <img className='imageWhoAmI' src={KozoIRL}></img>
+                        <img className='imageWhoAmI' src={KozoIRL} alt="Kozo Professional Coach"></img>
                     </div>
                     <div className='ImageTextItem textContainer'>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('quitCollege')} </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('vision')}  </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('coachWishIMet')} </p>
-                        <p className="hiddenRight textWhoAmI">&gt; {t('reachHighGM')} </p>
-                        <p className='hiddenRight textWhoAmI'>&gt; {t('takeThingsToTheNextLevel')} </p>
+                        <div className="professional-points">
+                            <div className="point-item hiddenRight">
+                                <div className="point-icon">
+                                    <div className="icon-checkmark">✓</div>
+                                </div>
+                                <div className="point-content">
+                                    <span dangerouslySetInnerHTML={{
+                                        __html: t('whyAmI1', { interpolation: { escapeValue: false } })
+                                    }}></span>
+                                </div>
+                            </div>
+
+                            <div className="point-item hiddenRight">
+                                <div className="point-icon">
+                                    <div className="icon-checkmark">✓</div>
+                                </div>
+                                <div className="point-content">
+                                    <span dangerouslySetInnerHTML={{
+                                        __html: t('whyAmI2', { interpolation: { escapeValue: false } })
+                                    }}></span>
+                                </div>
+                            </div>
+
+                            <div className="point-item hiddenRight">
+                                <div className="point-icon">
+                                    <div className="icon-checkmark">✓</div>
+                                </div>
+                                <div className="point-content">
+                                    <span dangerouslySetInnerHTML={{
+                                        __html: t('whyAmI3', { interpolation: { escapeValue: false } })
+                                    }}></span>
+                                </div>
+                            </div>
+
+                            <div className="point-item hiddenRight">
+                                <div className="point-icon">
+                                    <div className="icon-checkmark">✓</div>
+                                </div>
+                                <div className="point-content">
+                                    <span dangerouslySetInnerHTML={{
+                                        __html: t('whyAmI4', { interpolation: { escapeValue: false } })
+                                    }}></span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <p className='learnMore' onClick={aboutMeClick}><u>&#8599; {t('learnMore')}</u></p>
+                <div className="cta-section hiddenRight">
+                    <button className="learn-more-btn" onClick={aboutMeClick}>
+                        <span>{t('learnMore')}</span>
+                        <div className="btn-arrow">→</div>
+                    </button>
+                </div>
             </div>
-
         </div>
-
-
     );
 }
 

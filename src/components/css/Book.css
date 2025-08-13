@@ -163,7 +163,7 @@ body {
     flex-direction: row;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1400px) {
     .cardContainer {
         flex-direction: column;
         align-items: center;

@@ -84,7 +84,6 @@ function Menu() {
                 </div>
                 <i className='bx bx-menu' id="menu-icon"></i>
                 <nav className="navbar">
-                    <a onClick={academyClick} className="lien link--mneme">{t('academy')}</a>
                     <a onClick={aboutMeClick} className="lien link--mneme">{t('aboutMe')}</a>
                     <a onClick={bookNowClick} className='bookNowButtonMenu'>{t('book')}</a>
                     <a id='fr' className='hidePhone'>
@@ -103,7 +102,6 @@ function Menu() {
             </header>
             <nav className="sidebar" id='sidebar'>
                 <div className='sideBarItem' onClick={closeSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" /></svg></div>
-                <div className='sideBarItem sidebarLink'><a onClick={academyClick} className="">{t('academy')}</a></div>
                 <div className='sideBarItem sidebarLink'><a onClick={aboutMeClick} className="">{t('aboutMe')}</a></div>
                 <div className='sideBarItem' id='frPhone'>
                     <a >

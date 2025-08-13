@@ -10,14 +10,19 @@
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(3px);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.2),
+              0 1px 20px rgba(0, 0, 0, 0.05);
   z-index: 100;
-  transition: all 0.5s;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header::before {
@@ -29,13 +34,22 @@
   height: 100%;
   background: linear-gradient(90deg,
       transparent,
-      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.15),
       transparent);
-  transition: 0.5s;
+  transition: 0.8s ease-out;
+  border-radius: 0 0 20px 20px;
 }
 
 .header:hover::before {
   left: 100%;
+}
+
+.header:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.3),
+              0 1px 25px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
@@ -178,16 +192,21 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: white;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5) ;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: -15px 0 40px rgba(0, 0, 0, 0.3),
+              inset 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
 .sidebarLink {
   border-bottom:  #ffffff 2px solid ;
 }
-
+.linkBook {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .sideBarItem {
   margin: 30px 20px;
   cursor: pointer;

@@ -35,6 +35,15 @@
     font-family: 'BlowBrush';
     src: url('/public/assets/blowbrush.ttf');
 }
+.WelcomeContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
 .WelcomeText {
     font-family: "Moderniz";
     font-weight: 500;
@@ -43,17 +52,121 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.BurningText {
+.TypewriterText {
     color: #FFFFFF;
-    text-shadow: 0 -0px 0px #FFF, 0 -0px 0px rgb(255, 255, 255), 0 -5px 8px #000000, 0 -9px 12px rgb(0, 0, 0);
-    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 5px 8px #000000, 0 9px 12px rgb(0, 0, 0);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.cursor {
+    color: #ffffff;
+    font-weight: 100;
+    animation: none;
+}
+
+.cursor.blinking {
+    animation: blink 1s infinite;
+}
+
+.cursor.static {
+    opacity: 0;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.WelcomeSubtext {
+    margin-top: 2rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.ProfessionalSubtext {
+    color: #FFFFFF;
+    text-shadow: 
+        1px 1px 0px #000000,
+        -1px -1px 0px #000000,
+        1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        2px 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(0, 0, 0, 0.8);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.12em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ProfessionalSubtext::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 0;
+    animation: lineSlide 1s ease-out 3s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineSlide {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 0.7;
+        width: 50px;
+    }
 }
 
 @media (max-width: 768px) {
-    .BurningText {
-        text-align: center;
+    .TypewriterText {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .ProfessionalSubtext {
+        font-size: 1rem;
+    }
+    
+    .WelcomeContainer {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .TypewriterText {
         font-size: 2rem;
+    }
+    
+    .ProfessionalSubtext {
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
     }
 }
