@@ -71,7 +71,6 @@ function ImageCarousel({ images, isOpen, onClose }) {
             <button className="carousel-button left">&#10094;</button>
             <button className="carousel-button right">&#10095;</button>
             <div className="carousel-container">
-                <div className="image-counter">Final</div>
                 <div className="carousel-images">
                     {images.map((image, index) => (
                         <img 
@@ -83,6 +82,7 @@ function ImageCarousel({ images, isOpen, onClose }) {
                     ))}
                 </div>
             </div>
+            <div className="image-counter">Final</div>
         </dialog>
     );
 }
