@@ -17,14 +17,26 @@ function Testimonials() {
         
         if (!testimonialContainer || !prevButton || !nextButton) return;
         
-        const containerWidth = testimonialContainer.getBoundingClientRect().width;
+        const getCardWidth = () => {
+            const firstCard = testimonialContainer.querySelector('.cardTestimonial');
+            if (!firstCard) return 0;
+            
+            const cardStyle = window.getComputedStyle(firstCard);
+            const cardWidth = firstCard.offsetWidth;
+            const marginLeft = parseFloat(cardStyle.marginLeft);
+            const marginRight = parseFloat(cardStyle.marginRight);
+            
+            return cardWidth + marginLeft + marginRight;
+        };
 
         const handleNext = () => {
-            testimonialContainer.scrollLeft += containerWidth;
+            const cardWidth = getCardWidth();
+            testimonialContainer.scrollLeft += cardWidth;
         };
         
         const handlePrev = () => {
-            testimonialContainer.scrollLeft -= containerWidth;
+            const cardWidth = getCardWidth();
+            testimonialContainer.scrollLeft -= cardWidth;
         };
 
         nextButton.addEventListener('click', handleNext);
