@@ -79,7 +79,10 @@ const openCalendlyPopup30H = () => {
                 {t('chosePlan')}
             </h2>
             <div className='cardContainer'>
-                <div className="card">
+                <div className="card" style={{position: 'relative'}}>
+                    <div className="banner">
+                        <p>-50%</p>
+                    </div>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('singleHours')}</p>
@@ -89,7 +92,10 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>40 EUR</p>
+                                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+                                    <p style={{textDecoration: 'line-through', color: '#888', fontSize: '0.8em', margin: 0}}>40 EUR</p>
+                                    <p style={{margin: 0}}>20 EUR</p>
+                                </div>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
