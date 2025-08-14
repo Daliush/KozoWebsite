@@ -31,12 +31,26 @@ function Testimonials() {
 
         const handleNext = () => {
             const cardWidth = getCardWidth();
-            testimonialContainer.scrollLeft += cardWidth;
+            const maxScrollLeft = testimonialContainer.scrollWidth - testimonialContainer.clientWidth;
+            
+            if (testimonialContainer.scrollLeft >= maxScrollLeft) {
+                // If at the end, go back to the beginning
+                testimonialContainer.scrollLeft = 0;
+            } else {
+                testimonialContainer.scrollLeft += cardWidth;
+            }
         };
         
         const handlePrev = () => {
             const cardWidth = getCardWidth();
-            testimonialContainer.scrollLeft -= cardWidth;
+            
+            if (testimonialContainer.scrollLeft <= 0) {
+                // If at the beginning, go to the end
+                const maxScrollLeft = testimonialContainer.scrollWidth - testimonialContainer.clientWidth;
+                testimonialContainer.scrollLeft = maxScrollLeft;
+            } else {
+                testimonialContainer.scrollLeft -= cardWidth;
+            }
         };
 
         nextButton.addEventListener('click', handleNext);
