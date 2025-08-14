@@ -1,6 +1,6 @@
 import './css/WhoAmI.css';
 import './css/Home.css';
-import KozoIRL from '../images/KozoStanding.jpg';
+import KozoIRL from '../images/perso_kozo_avec_halo_fond_dojo.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 function WhoAmI() {

@@ -43,6 +43,7 @@
 .imageWhoAmI {
     object-fit: cover;
     height: 500px;
+    max-width: 350px;
     border-radius: 0.2em;
     border: solid 0.1em;
 }
