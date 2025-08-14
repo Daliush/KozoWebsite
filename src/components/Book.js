@@ -11,66 +11,76 @@ function Book() {
 
     // Fonction pour ouvrir le modal
     const openModal = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     // Fonction pour fermer le modal
     const closeModal = () => {
-      setIsModalOpen(false);
+        setIsModalOpen(false);
     };
 
     // Déclaration de l'objet Calendly pour TypeScript
-  useEffect(() => {
-    // Optionnel : Charger le script dynamiquement si vous ne l'avez pas ajouté dans index.html
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
+    useEffect(() => {
+        // Optionnel : Charger le script dynamiquement si vous ne l'avez pas ajouté dans index.html
+        const script = document.createElement("script");
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
+    const openCalendlyPopup1H = () => {
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/kozostraininglegends/30min',
+            });
+        } else {
+            console.error("Calendly script not loaded");
+        }
     };
-  }, []);
 
-  const openCalendlyPopup1H = () => {
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/kozostraininglegends/30min',
-      });
-    } else {
-      console.error("Calendly script not loaded");
-    }
-  };
+    const openCalendlyPopup4H = () => {
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/kozostraininglegends/plan-de-5-heures',
+            });
+        } else {
+            console.error("Calendly script not loaded");
+        }
+    };
 
-  const openCalendlyPopup4H = () => {
-    if (window.Calendly) {
-        window.Calendly.initPopupWidget({
-            url: 'https://calendly.com/kozostraininglegends/plan-de-5-heures',
-        });
-    } else {
-        console.error("Calendly script not loaded");
-    }
-};
+    const openCalendlyPopup8H = () => {
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/kozostraininglegends/plan-au-mois-greater-impact-8h-2h',
+            });
+        } else {
+            console.error("Calendly script not loaded");
+        }
+    };
 
-const openCalendlyPopup8H = () => {
-    if (window.Calendly) {
-        window.Calendly.initPopupWidget({
-            url: 'https://calendly.com/kozostraininglegends/plan-au-mois-greater-impact-8h-2h',
-        });
-    } else {
-        console.error("Calendly script not loaded");
-    }
-};
+    const openCalendlyPopup30H = () => {
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/kozostraininglegends/plan-au-mois-taking-over-30-5h',
+            });
+        } else {
+            console.error("Calendly script not loaded");
+        }
+    };
 
-const openCalendlyPopup30H = () => {
-    if (window.Calendly) {
-        window.Calendly.initPopupWidget({
-            url: 'https://calendly.com/kozostraininglegends/plan-au-mois-taking-over-30-5h',
-        });
-    } else {
-        console.error("Calendly script not loaded");
-    }
-};
+        const openCalendlyPopupDiscount = () => {
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/kozostraininglegends/heure-d-essai',
+            });
+        } else {
+            console.error("Calendly script not loaded");
+        }
+    };
 
 
     return (
@@ -79,10 +89,37 @@ const openCalendlyPopup30H = () => {
                 {t('chosePlan')}
             </h2>
             <div className='cardContainer'>
-                <div className="card" style={{position: 'relative'}}>
+                <div className="card" style={{ position: 'relative' }}>
                     <div className="banner">
                         <p>-50%</p>
                     </div>
+                    <div className='main'>
+                        <img className='bookingImage' src={myImage} alt="bookingPhoto" />
+                        <p className='h2Basic'>{t('newRecruits')}</p>
+                        <p className='description'>
+                            {t('newRecruitsDescr')}
+                        </p>
+                        <div className='bookingInfo'>
+                            <div className="price">
+                                <ins>€</ins>
+                                <p>20 EUR</p>
+                            </div>
+                            <div className="duration">
+                                <ins>◷</ins>
+                                <p>{t('1Hour')}</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className='link'>
+                            <a onClick={openCalendlyPopupDiscount}>
+                                <div className='bookButton'>
+                                    {t('bookPlan')}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="card" style={{ position: 'relative' }}>
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('singleHours')}</p>
@@ -92,10 +129,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
-                                    <p style={{textDecoration: 'line-through', color: '#888', fontSize: '0.8em', margin: 0}}>40 EUR</p>
-                                    <p style={{margin: 0}}>20 EUR</p>
-                                </div>
+                                <p>40 EUR</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -106,7 +140,7 @@ const openCalendlyPopup30H = () => {
                         <div className='link'>
                             <a onClick={openCalendlyPopup1H}>
                                 <div className='bookButton'>
-                                {t('bookPlan')}
+                                    {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
@@ -117,7 +151,7 @@ const openCalendlyPopup30H = () => {
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('5hours')}</p>
                         <p className='description'
-                        dangerouslySetInnerHTML={{ __html: t('5hoursDescr', { interpolation: { escapeValue: false } }) }}>
+                            dangerouslySetInnerHTML={{ __html: t('5hoursDescr', { interpolation: { escapeValue: false } }) }}>
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
@@ -133,19 +167,19 @@ const openCalendlyPopup30H = () => {
                         <div className='link'>
                             <a onClick={openCalendlyPopup4H}>
                                 <div className='bookButton'>
-                                {t('bookPlan')}
+                                    {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="card">
                     <div className='main'>
                         <img className='bookingImage' src={myImage} alt="bookingPhoto" />
                         <p className='h2Basic'>{t('20hours')}</p>
                         <p className='description'>
-                        {t('20hoursDescr')}
+                            {t('20hoursDescr')}
                         </p>
                         <div className='bookingInfo'>
                             <div className="price">
@@ -161,7 +195,7 @@ const openCalendlyPopup30H = () => {
                         <div className='link'>
                             <a onClick={openCalendlyPopup30H}>
                                 <div className='bookButton'>
-                                {t('bookPlan')}
+                                    {t('bookPlan')}
                                 </div>
                             </a>
                         </div>
@@ -177,7 +211,7 @@ const openCalendlyPopup30H = () => {
                         <div className='bookingInfo'>
                             <div className="price">
                                 <ins>€</ins>
-                                <p>19.99 EUR HT</p>
+                                <p>14 EUR HT</p>
                             </div>
                             <div className="duration">
                                 <ins>◷</ins>
@@ -188,16 +222,16 @@ const openCalendlyPopup30H = () => {
                         <div className='link'>
                             <a href='https://www.patreon.com/c/Kozo77' target='_blank'>
                                 <div className='bookButton'>
-                                {t('patreonButton')}
+                                    {t('patreonButton')}
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                      {/* Composant ModalPlans */}
-      {isModalOpen && <ModalPlans closeModal={closeModal} />}
+                {/* Composant ModalPlans */}
+                {isModalOpen && <ModalPlans closeModal={closeModal} />}
             </div>
-            
+
         </div>
     );
 }
