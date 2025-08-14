@@ -17,19 +17,29 @@ function HowItWorks() {
                 <div className="StepsItem Book hiddenRight">
                     <h3 className="StepTitle">{t('bookBody')} </h3>
                     <p>
-                        <a dangerouslySetInnerHTML={{ __html: t('book1', { interpolation: { escapeValue: false } }) }}></a>  <a className='linkBook' onClick={bookNowClick}>{t('book1Link')}</a>
+                        <span dangerouslySetInnerHTML={{ __html: t('book1', { interpolation: { escapeValue: false } }) }}></span> <a className='linkBook' onClick={bookNowClick}>{t('book1Link')}</a>
+                    </p>
+                    <p>
+                        {t('book2')}
+                    </p>
+                    <p>
+                        {t('book3')}
+                    </p>
+                    <p>
+                        {t('book4')}
                     </p>
                 </div>
 
                 <div className="StepsItem Learn hiddenRight">
                 <h3 className="StepTitle">{t('learn')} </h3>
-                <p dangerouslySetInnerHTML={{ __html: t('learn1', { interpolation: { escapeValue: false } }) }}></p>
+                <p>{t('learn1')}</p>
+                <p>{t('learn2')}</p>
+                <p>{t('learn3')}</p>
                 </div>
 
                 <div className="StepsItem Result hiddenRight">
                 <h3 className="StepTitle">{t('obtainResults')}</h3>
-                <p dangerouslySetInnerHTML={{ __html: t('obtainResults1', { interpolation: { escapeValue: false } }) }}></p>
-                <p dangerouslySetInnerHTML={{ __html: t('obtainResults2', { interpolation: { escapeValue: false } }) }}></p>
+                <p>{t('obtainResults1')}</p>
                 </div>
             </div>
 
