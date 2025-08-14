@@ -16,12 +16,22 @@ function ImageCarousel({ images, isOpen, onClose }) {
 
         const showImage = (index) => {
             const imageElements = modal.querySelectorAll('.carousel-image');
+            const counterElement = modal.querySelector('.image-counter');
+            
             imageElements.forEach((img, i) => {
                 img.classList.remove('active');
                 if (i === index) {
                     img.classList.add('active');
                 }
             });
+
+            if (counterElement) {
+                if (index === 0) {
+                    counterElement.textContent = 'Final';
+                } else {
+                    counterElement.textContent = `Climb: ${index}/${images.length - 1}`;
+                }
+            }
         };
 
         const nextImage = () => {
@@ -61,6 +71,7 @@ function ImageCarousel({ images, isOpen, onClose }) {
             <button className="carousel-button left">&#10094;</button>
             <button className="carousel-button right">&#10095;</button>
             <div className="carousel-container">
+                <div className="image-counter">Final</div>
                 <div className="carousel-images">
                     {images.map((image, index) => (
                         <img 
