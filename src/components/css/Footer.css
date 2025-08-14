@@ -1,6 +1,9 @@
 footer {
   margin : 0;
   padding: 0;
+  position: relative;
+  z-index: 10;
+  background-color: rgb(29, 29, 29);
 }
 .FooterContainer {
     display: flex;

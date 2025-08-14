@@ -1,0 +1,96 @@
+/* Galaxy Animation Styles - Desktop Only */
+.galaxy-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+.galaxy-star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ffffff 0%, #ffffff 40%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff, 0 0 35px #6366f1;
+  will-change: transform;
+}
+
+.galaxy-star.scroll-animate {
+  animation: none;
+}
+
+.galaxy-star:nth-child(2n) {
+  width: 3px;
+  height: 3px;
+  animation-duration: 2s;
+  animation-delay: -1s;
+}
+
+.galaxy-star:nth-child(3n) {
+  width: 5px;
+  height: 5px;
+  animation-duration: 4s;
+  animation-delay: -2s;
+  box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff, 0 0 35px #818cf8;
+}
+
+.galaxy-particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, rgba(99, 102, 241, 0.4) 50%, transparent 100%);
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.galaxy-particle.scroll-animate {
+  animation: none;
+}
+
+.galaxy-particle:nth-child(odd) {
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.6) 0%, rgba(129, 140, 248, 0.3) 50%, transparent 100%);
+  animation-duration: 8s;
+  animation-delay: -3s;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(270deg);
+  }
+}
+
+/* Hide galaxy animation on mobile and tablet */
+@media (max-width: 768px) {
+  .galaxy-animation {
+    display: none;
+  }
+}

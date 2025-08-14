@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import WhoAmI from './WhoAmI';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
+import GalaxyAnimation from './GalaxyAnimation';
 import { useLocation } from 'react-router-dom';
 
 function Home() {
@@ -49,7 +50,7 @@ function Home() {
       }
     }
 
-    // Add scroll listener for blur effect
+    // Add scroll listener for blur effect and galaxy animation
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const blurOverlay = document.getElementById('blur-overlay');
@@ -59,9 +60,13 @@ function Home() {
       } else {
         blurOverlay.classList.remove('blur-active');
       }
+
     };
 
     window.addEventListener('scroll', handleScroll);
+    
+    // Trigger initial animation
+    handleScroll();
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -73,6 +78,7 @@ function Home() {
   return (
     <div className="App">
       <div id="blur-overlay" className="blur-overlay"></div>
+      <GalaxyAnimation />
       <div className="App-body">
         <section id='welcome'>
           <div><Welcome /></div>
